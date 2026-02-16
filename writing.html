@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Writing & Vision | Momoh Mustapha Sandi - CEO & Thought Leader</title>
+  <meta name="description" content="Thoughts and insights from Momoh Mustapha Sandi, CEO & Founder of Market360. Articles on building tech for local markets, leadership, and African startups.">
+  <meta name="keywords" content="Momoh Mustapha Sandi, CEO, thought leadership, African startups, tech, Market360, entrepreneurship">
+  <meta name="author" content="Momoh Mustapha Sandi">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Writing & Vision | Momoh Mustapha Sandi">
+  <meta property="og:description" content="Thoughts and insights from CEO & Founder Momoh Mustapha Sandi.">
+  <meta property="og:type" content="website">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://momohsandi.com/writing.html">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>M</text></svg>">
+
+  <style>
+    /* =====================================================
+       CSS VARIABLES & THEME SYSTEM
+       ===================================================== */
+    :root {
+      /* Light Mode Colors - OpenAI Inspired */
+      --bg-primary: #FAFAFA;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F5F5F7;
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --text-tertiary: #64748B;
+      --border-color: #E5E7EB;
+      --border-light: #F1F5F9;
+      --accent-primary: #2563EB;
+      --accent-hover: #1D4ED8;
+      --accent-light: rgba(37, 99, 235, 0.1);
+      --accent-glow: rgba(37, 99, 235, 0.15);
+      --success: #10B981;
+      --success-light: rgba(16, 185, 129, 0.1);
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08);
+      --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.12);
+      --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.15);
+      --glass-bg: rgba(255, 255, 255, 0.8);
+      --glass-border: rgba(255, 255, 255, 0.5);
+      
+      /* Typography */
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 2rem;
+      --font-size-4xl: 2.5rem;
+      --font-size-5xl: 3.5rem;
+      
+      /* Spacing */
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      
+      /* Border Radius */
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+      --radius-2xl: 1.5rem;
+      --radius-full: 9999px;
+      
+      /* Transitions */
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --transition-slow: 400ms ease;
+    }
+
+    /* Dark Mode */
+    [data-theme="dark"] {
+      --bg-primary: #0B0F14;
+      --bg-secondary: #111827;
+      --bg-tertiary: #1F2937;
+      --text-primary: #F9FAFB;
+      --text-secondary: #D1D5DB;
+      --text-tertiary: #9CA3AF;
+      --border-color: #374151;
+      --border-light: #1F2937;
+      --accent-light: rgba(59, 130, 246, 0.15);
+      --accent-glow: rgba(59, 130, 246, 0.2);
+      --accent-primary: #3B82F6;
+      --accent-hover: #60A5FA;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.4);
+      --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 60px rgba(59, 130, 246, 0.2);
+      --glass-bg: rgba(17, 24, 39, 0.8);
+      --glass-border: rgba(55, 65, 81, 0.5);
+    }
+
+    /* =====================================================
+       RESET & BASE STYLES
+       ===================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-size: var(--font-size-base);
+      line-height: 1.6;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
+      overflow-x: hidden;
+      transition: background-color var(--transition-slow), color var(--transition-slow);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    input, textarea, select {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-6);
+    }
+
+    .container--narrow {
+      max-width: 800px;
+    }
+
+    /* =====================================================
+       HEADER & NAVIGATION
+       ===================================================== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-light);
+      transition: all var(--transition-base);
+    }
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-6);
+    }
+
+    .header__logo {
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      transition: opacity var(--transition-fast);
+    }
+
+    .header__logo:hover {
+      opacity: 0.8;
+    }
+
+    .header__logo span {
+      color: var(--accent-primary);
+    }
+
+    .nav__list {
+      display: none;
+      list-style: none;
+      gap: var(--space-1);
+    }
+
+    .nav__link {
+      display: block;
+      padding: var(--space-2) var(--space-4);
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
+    }
+
+    .nav__link:hover {
+      color: var(--text-primary);
+      background: var(--accent-light);
+    }
+
+    .nav__link--active {
+      color: var(--accent-primary);
+      background: var(--accent-light);
+    }
+
+    .header__actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-full);
+      color: var(--text-secondary);
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      transition: all var(--transition-fast);
+    }
+
+    .theme-toggle:hover {
+      color: var(--text-primary);
+      background: var(--accent-light);
+      border-color: var(--accent-primary);
+      transform: scale(1.05);
+    }
+
+    .theme-toggle svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .mobile-menu-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-lg);
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      transition: all var(--transition-fast);
+    }
+
+    .mobile-menu-toggle:hover {
+      background: var(--accent-light);
+      border-color: var(--accent-primary);
+    }
+
+    .mobile-menu-toggle__line {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: var(--text-primary);
+      border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
+    }
+
+    .mobile-menu-toggle__line + .mobile-menu-toggle__line {
+      margin-top: 4px;
+    }
+
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -4px);
+    }
+
+    .mobile-nav {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      background: var(--bg-primary);
+      padding: var(--space-8) var(--space-6);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all var(--transition-base);
+    }
+
+    .mobile-nav.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .mobile-nav__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .mobile-nav__link {
+      display: block;
+      padding: var(--space-4) var(--space-5);
+      font-size: var(--font-size-lg);
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-radius: var(--radius-xl);
+      transition: all var(--transition-fast);
+    }
+
+    .mobile-nav__link:hover,
+    .mobile-nav__link--active {
+      color: var(--accent-primary);
+      background: var(--accent-light);
+    }
+
+    /* =====================================================
+       HERO SECTION
+       ===================================================== */
+    .hero {
+      position: relative;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      padding: calc(72px + var(--space-16)) 0 var(--space-16);
+      overflow: hidden;
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .hero__gradient {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.4;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .hero__gradient--1 {
+      top: -200px;
+      left: -100px;
+      background: var(--accent-primary);
+      animation-delay: 0s;
+    }
+
+    .hero__gradient--2 {
+      bottom: -200px;
+      right: -100px;
+      background: var(--accent-hover);
+      animation-delay: -10s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, -30px) scale(1.1); }
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    .hero__label {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--accent-primary);
+      background: var(--accent-light);
+      border-radius: var(--radius-full);
+      margin-bottom: var(--space-6);
+    }
+
+    .hero__label svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .hero__title {
+      font-size: clamp(var(--font-size-3xl), 6vw, var(--font-size-5xl));
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      margin-bottom: var(--space-6);
+    }
+
+    .hero__title span {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero__description {
+      font-size: var(--font-size-lg);
+      line-height: 1.7;
+      color: var(--text-secondary);
+      max-width: 560px;
+    }
+
+    /* =====================================================
+       FEATURED ARTICLE
+       ===================================================== */
+    .featured-section {
+      padding: var(--space-16) 0;
+    }
+
+    .section-header {
+      margin-bottom: var(--space-10);
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-primary);
+      margin-bottom: var(--space-3);
+    }
+
+    .section-title {
+      font-size: var(--font-size-3xl);
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .featured-article {
+      display: grid;
+      gap: var(--space-8);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .featured-article:hover {
+      border-color: var(--accent-primary);
+      box-shadow: var(--shadow-lg), var(--shadow-glow);
+      transform: translateY(-4px);
+    }
+
+    .featured-article__image {
+      position: relative;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+    }
+
+    .featured-article__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    .featured-article:hover .featured-article__image img {
+      transform: scale(1.05);
+    }
+
+    .featured-article__content {
+      padding: var(--space-6) var(--space-6) var(--space-8);
+    }
+
+    .featured-article__meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-4);
+    }
+
+    .featured-article__category {
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      font-size: var(--font-size-xs);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-primary);
+      background: var(--accent-light);
+      border-radius: var(--radius-full);
+    }
+
+    .featured-article__date {
+      font-size: var(--font-size-sm);
+      color: var(--text-tertiary);
+    }
+
+    .featured-article__title {
+      font-size: var(--font-size-2xl);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+      margin-bottom: var(--space-4);
+    }
+
+    .featured-article__excerpt {
+      font-size: var(--font-size-base);
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: var(--space-6);
+    }
+
+    .featured-article__link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--accent-primary);
+      transition: gap var(--transition-fast);
+    }
+
+    .featured-article__link:hover {
+      gap: var(--space-3);
+    }
+
+    .featured-article__link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* =====================================================
+       ARTICLES GRID
+       ===================================================== */
+    .articles-section {
+      padding: var(--space-20) 0;
+      background: var(--bg-tertiary);
+    }
+
+    .section-header--center {
+      text-align: center;
+    }
+
+    .articles-grid {
+      display: grid;
+      gap: var(--space-8);
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .article-card:hover {
+      border-color: var(--accent-primary);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .article-card__image {
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+
+    .article-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    .article-card:hover .article-card__image img {
+      transform: scale(1.05);
+    }
+
+    .article-card__content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: var(--space-5);
+    }
+
+    .article-card__meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-3);
+    }
+
+    .article-card__category {
+      display: inline-block;
+      padding: var(--space-1) var(--space-2);
+      font-size: var(--font-size-xs);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--accent-primary);
+      background: var(--accent-light);
+      border-radius: var(--radius-sm);
+    }
+
+    .article-card__date {
+      font-size: var(--font-size-xs);
+      color: var(--text-tertiary);
+    }
+
+    .article-card__title {
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-bottom: var(--space-3);
+    }
+
+    .article-card__excerpt {
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: var(--space-4);
+      flex: 1;
+    }
+
+    .article-card__link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--accent-primary);
+      transition: gap var(--transition-fast);
+    }
+
+    .article-card__link:hover {
+      gap: var(--space-3);
+    }
+
+    .article-card__link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* =====================================================
+       NEWSLETTER SECTION
+       ===================================================== */
+    .newsletter-section {
+      padding: var(--space-20) 0;
+    }
+
+    .newsletter-card {
+      position: relative;
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      border-radius: var(--radius-2xl);
+      padding: var(--space-12) var(--space-8);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .newsletter-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+
+    .newsletter-card::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+    }
+
+    .newsletter-card__content {
+      position: relative;
+      z-index: 1;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .newsletter-card__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-xl);
+      margin: 0 auto var(--space-6);
+    }
+
+    .newsletter-card__icon svg {
+      width: 28px;
+      height: 28px;
+      color: #FFFFFF;
+    }
+
+    .newsletter-card__title {
+      font-size: var(--font-size-2xl);
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: var(--space-3);
+    }
+
+    .newsletter-card__description {
+      font-size: var(--font-size-base);
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+      margin-bottom: var(--space-8);
+    }
+
+    .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+
+    .newsletter-form__group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .newsletter-form__input {
+      width: 100%;
+      padding: var(--space-4) var(--space-5);
+      font-size: var(--font-size-base);
+      color: var(--text-primary);
+      background: #FFFFFF;
+      border: 2px solid transparent;
+      border-radius: var(--radius-full);
+      outline: none;
+      transition: all var(--transition-fast);
+    }
+
+    .newsletter-form__input:focus {
+      border-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+    }
+
+    .newsletter-form__input::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      padding: var(--space-4) var(--space-8);
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      transition: all var(--transition-base);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn--white {
+      color: var(--accent-primary);
+      background: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn--white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn--white:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .newsletter-form__note {
+      font-size: var(--font-size-sm);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* =====================================================
+       TOPICS SECTION
+       ===================================================== */
+    .topics-section {
+      padding: var(--space-20) 0;
+      background: var(--bg-tertiary);
+    }
+
+    .topics-grid {
+      display: grid;
+      gap: var(--space-6);
+    }
+
+    .topic-card {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-5);
+      padding: var(--space-6);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      transition: all var(--transition-base);
+    }
+
+    .topic-card:hover {
+      border-color: var(--accent-primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .topic-card__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background: var(--accent-light);
+      border-radius: var(--radius-lg);
+      color: var(--accent-primary);
+      flex-shrink: 0;
+    }
+
+    .topic-card__icon svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .topic-card__content h3 {
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: var(--space-2);
+    }
+
+    .topic-card__content p {
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+    .footer {
+      padding: var(--space-16) 0 var(--space-8);
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .footer__grid {
+      display: grid;
+      gap: var(--space-10);
+      margin-bottom: var(--space-12);
+    }
+
+    .footer__brand {
+      max-width: 320px;
+    }
+
+    .footer__logo {
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .footer__logo span {
+      color: var(--accent-primary);
+    }
+
+    .footer__description {
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: var(--space-6);
+    }
+
+    .footer__social {
+      display: flex;
+      gap: var(--space-3);
+    }
+
+    .footer__social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-lg);
+      color: var(--text-secondary);
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      transition: all var(--transition-fast);
+    }
+
+    .footer__social-link:hover {
+      color: var(--accent-primary);
+      border-color: var(--accent-primary);
+      transform: translateY(-2px);
+    }
+
+    .footer__social-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer__nav-title {
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .footer__nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .footer__nav-link {
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+      transition: color var(--transition-fast);
+    }
+
+    .footer__nav-link:hover {
+      color: var(--accent-primary);
+    }
+
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .footer__copyright {
+      font-size: var(--font-size-sm);
+      color: var(--text-tertiary);
+    }
+
+    .footer__legal {
+      display: flex;
+      gap: var(--space-6);
+    }
+
+    .footer__legal-link {
+      font-size: var(--font-size-sm);
+      color: var(--text-tertiary);
+      transition: color var(--transition-fast);
+    }
+
+    .footer__legal-link:hover {
+      color: var(--accent-primary);
+    }
+
+    /* =====================================================
+       ANIMATIONS
+       ===================================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
+    .reveal--delay-4 { transition-delay: 0.4s; }
+    .reveal--delay-5 { transition-delay: 0.5s; }
+
+    /* =====================================================
+       RESPONSIVE STYLES
+       ===================================================== */
+    @media (min-width: 640px) {
+      .newsletter-form__group {
+        flex-direction: row;
+      }
+
+      .newsletter-form__input {
+        flex: 1;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .nav__list {
+        display: flex;
+      }
+
+      .mobile-menu-toggle {
+        display: none;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+
+      .featured-article {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .featured-article__image {
+        aspect-ratio: auto;
+      }
+
+      .featured-article__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: var(--space-8);
+      }
+
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer__grid {
+        grid-template-columns: 1.5fr 1fr 1fr;
+      }
+
+      .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero__title {
+        font-size: var(--font-size-5xl);
+      }
+
+      .articles-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .topics-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .topic-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .topic-card__icon {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body data-theme="light">
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Momoh Mustapha Sandi - Home">
+        Momoh<span>.</span>
+      </a>
+      
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="projects.html" class="nav__link">Projects</a></li>
+          <li><a href="market360.html" class="nav__link">Market360</a></li>
+          <li><a href="skills.html" class="nav__link">Skills</a></li>
+          <li><a href="writing.html" class="nav__link nav__link--active">Writing</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header__actions">
+        <button class="theme-toggle" aria-label="Toggle theme" id="theme-toggle">
+          <svg class="theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon--moon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
+          <span class="mobile-menu-toggle__line"></span>
+          <span class="mobile-menu-toggle__line"></span>
+          <span class="mobile-menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+      <li><a href="market360.html" class="mobile-nav__link">Market360</a></li>
+      <li><a href="skills.html" class="mobile-nav__link">Skills</a></li>
+      <li><a href="writing.html" class="mobile-nav__link mobile-nav__link--active">Writing</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="writing-title">
+      <div class="hero__bg">
+        <div class="hero__gradient hero__gradient--1"></div>
+        <div class="hero__gradient hero__gradient--2"></div>
+      </div>
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__label reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+              <path d="M2 2l7.586 7.586"></path>
+              <circle cx="11" cy="11" r="2"></circle>
+            </svg>
+            Insights & Ideas
+          </span>
+          <h1 id="writing-title" class="hero__title reveal reveal--delay-1">
+            Writing & <span>Vision</span>
+          </h1>
+          <p class="hero__description reveal reveal--delay-2">
+            Thoughts on building technology for local markets, leadership in African startups, 
+            and the future of digital commerce — by <strong>Momoh Mustapha Sandi</strong>, 
+            CEO & Founder of Market360.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-section" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Featured</span>
+          <h2 id="featured-title" class="section-title">Latest Thoughts</h2>
+        </header>
+        
+        <article class="featured-article reveal reveal--delay-1">
+          <div class="featured-article__image">
+            <img src="/placeholder.svg?height=500&width=800" alt="African tech startup landscape" loading="lazy">
+          </div>
+          <div class="featured-article__content">
+            <div class="featured-article__meta">
+              <span class="featured-article__category">Leadership</span>
+              <span class="featured-article__date">January 2025</span>
+            </div>
+            <h3 class="featured-article__title">
+              Building Technology for Local Markets: Lessons from Sierra Leone
+            </h3>
+            <p class="featured-article__excerpt">
+              As the CEO of Market360, I've learned that building technology for African markets 
+              requires a fundamentally different approach than what works in Silicon Valley. 
+              Here are the key insights from our journey building Sierra Leone's leading digital marketplace, 
+              alongside Vice CEO Ezekiel Sesay.
+            </p>
+            <a href="#" class="featured-article__link">
+              Read Article
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="topics-section" aria-labelledby="topics-title">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="section-label">Topics</span>
+          <h2 id="topics-title" class="section-title">What I Write About</h2>
+        </header>
+        
+        <div class="topics-grid reveal reveal--delay-1">
+          <div class="topic-card">
+            <div class="topic-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="topic-card__content">
+              <h3>African Markets</h3>
+              <p>Building technology solutions for unique African market challenges</p>
+            </div>
+          </div>
+          
+          <div class="topic-card">
+            <div class="topic-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="topic-card__content">
+              <h3>Leadership</h3>
+              <p>CEO insights on building teams and leading with purpose</p>
+            </div>
+          </div>
+          
+          <div class="topic-card">
+            <div class="topic-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="topic-card__content">
+              <h3>Product</h3>
+              <p>From idea to execution: building products that matter</p>
+            </div>
+          </div>
+          
+          <div class="topic-card">
+            <div class="topic-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div class="topic-card__content">
+              <h3>Fintech</h3>
+              <p>The future of payments and financial services in Africa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-section" aria-labelledby="articles-title">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="section-label">Archive</span>
+          <h2 id="articles-title" class="section-title">All Articles</h2>
+        </header>
+        
+        <div class="articles-grid">
+          
+          <!-- Article 1 -->
+          <article class="article-card reveal">
+            <div class="article-card__image">
+              <img src="/placeholder.svg?height=280&width=400" alt="Leadership in African startups" loading="lazy">
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">Leadership</span>
+                <span class="article-card__date">Dec 2024</span>
+              </div>
+              <h3 class="article-card__title">
+                Leadership in African Startups: Beyond the Hustle Culture
+              </h3>
+              <p class="article-card__excerpt">
+                The narrative around African startups often centers on hustle and grind. 
+                As a CEO, I've found that sustainable leadership requires a different approach.
+              </p>
+              <a href="#" class="article-card__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+          <!-- Article 2 -->
+          <article class="article-card reveal reveal--delay-1">
+            <div class="article-card__image">
+              <img src="/placeholder.svg?height=280&width=400" alt="Building trust in digital commerce" loading="lazy">
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">Product</span>
+                <span class="article-card__date">Nov 2024</span>
+              </div>
+              <h3 class="article-card__title">
+                Building Trust in Markets Where Trust is Scarce
+              </h3>
+              <p class="article-card__excerpt">
+                Trust is the foundation of commerce. In emerging markets where institutional 
+                trust is low, how do you build a platform that both buyers and sellers can rely on?
+              </p>
+              <a href="#" class="article-card__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+          <!-- Article 3 -->
+          <article class="article-card reveal reveal--delay-2">
+            <div class="article-card__image">
+              <img src="/placeholder.svg?height=280&width=400" alt="Mobile-first development" loading="lazy">
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">Technology</span>
+                <span class="article-card__date">Oct 2024</span>
+              </div>
+              <h3 class="article-card__title">
+                Mobile-First Isn't Enough: Building for Africa's Internet
+              </h3>
+              <p class="article-card__excerpt">
+                Everyone talks about mobile-first design, but building for African markets 
+                requires going further — optimizing for intermittent connectivity and expensive data.
+              </p>
+              <a href="#" class="article-card__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+          <!-- Article 4 -->
+          <article class="article-card reveal reveal--delay-3">
+            <div class="article-card__image">
+              <img src="/placeholder.svg?height=280&width=400" alt="Working with co-founders" loading="lazy">
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">Founder Journey</span>
+                <span class="article-card__date">Sep 2024</span>
+              </div>
+              <h3 class="article-card__title">
+                The Power of Partnership: Working with Vice CEO Ezekiel Sesay
+              </h3>
+              <p class="article-card__excerpt">
+                Building Market360 wouldn't be possible without the partnership I share with 
+                Vice CEO Ezekiel Sesay. Here's what I've learned about leadership partnerships.
+              </p>
+              <a href="#" class="article-card__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+          <!-- Article 5 -->
+          <article class="article-card reveal reveal--delay-4">
+            <div class="article-card__image">
+              <img src="/placeholder.svg?height=280&width=400" alt="Digital payments in Africa" loading="lazy">
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">Fintech</span>
+                <span class="article-card__date">Aug 2024</span>
+              </div>
+              <h3 class="article-card__title">
+                The Future of Payments in Sierra Leone
+              </h3>
+              <p class="article-card__excerpt">
+                As digital commerce grows in Sierra Leone, the payment infrastructure must 
+                evolve. Here's my vision for how payments will transform over the next decade.
+              </p>
+              <a href="#" class="article-card__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+          <!-- Article 6 -->
+          <article class="article-card reveal reveal--delay-5">
+            <div class="article-card__image">
+              <img src="/placeholder.svg?height=280&width=400" alt="Product development journey" loading="lazy">
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">Product</span>
+                <span class="article-card__date">Jul 2024</span>
+              </div>
+              <h3 class="article-card__title">
+                From Idea to Product: The Market360 Story
+              </h3>
+              <p class="article-card__excerpt">
+                Every product starts with a problem. Here's the story of how Market360 went 
+                from a simple idea to a platform serving thousands across Sierra Leone.
+              </p>
+              <a href="#" class="article-card__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter-card reveal">
+          <div class="newsletter-card__content">
+            <div class="newsletter-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h2 id="newsletter-title" class="newsletter-card__title">
+              Subscribe to My Newsletter
+            </h2>
+            <p class="newsletter-card__description">
+              Get monthly insights on building technology for African markets, 
+              leadership, and the startup journey. No spam, just thoughtful content 
+              from my experience as CEO of Market360.
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+              <div class="newsletter-form__group">
+                <label for="newsletter-email" class="sr-only">Email address</label>
+                <input 
+                  type="email" 
+                  id="newsletter-email" 
+                  name="email" 
+                  class="newsletter-form__input" 
+                  placeholder="Enter your email address"
+                  required
+                  autocomplete="email"
+                >
+                <button type="submit" class="btn btn--white">
+                  Subscribe
+                </button>
+              </div>
+              <p class="newsletter-form__note">
+                Join 500+ founders and tech enthusiasts. Unsubscribe anytime.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Momoh<span>.</span></div>
+          <p class="footer__description">
+            Momoh Mustapha Sandi is a CEO, Founder, and Software Product Builder 
+            creating digital solutions for African markets. Leading Market360 alongside 
+            Vice CEO Ezekiel Sesay.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__nav-title">Navigation</h4>
+          <ul class="footer__nav-list">
+            <li><a href="about.html" class="footer__nav-link">About</a></li>
+            <li><a href="projects.html" class="footer__nav-link">Projects</a></li>
+            <li><a href="market360.html" class="footer__nav-link">Market360</a></li>
+            <li><a href="skills.html" class="footer__nav-link">Skills</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer__nav-title">Connect</h4>
+          <ul class="footer__nav-list">
+            <li><a href="writing.html" class="footer__nav-link">Writing</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Contact</a></li>
+            <li><a href="#" class="footer__nav-link">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2025 Momoh Mustapha Sandi. All rights reserved.
+        </p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* =====================================================
+       THEME MANAGEMENT
+       ===================================================== */
+    (function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const sunIcon = themeToggle.querySelector('.theme-icon--sun');
+      const moonIcon = themeToggle.querySelector('.theme-icon--moon');
+      
+      function getPreferredTheme() {
+        const saved = localStorage.getItem('theme');
+        if (saved) return saved;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        
+        if (theme === 'dark') {
+          sunIcon.style.display = 'none';
+          moonIcon.style.display = 'block';
+        } else {
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        }
+      }
+      
+      setTheme(getPreferredTheme());
+      
+      themeToggle.addEventListener('click', function() {
+        const current = document.documentElement.getAttribute('data-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+      
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (!localStorage.getItem('theme')) {
+          setTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+
+    /* =====================================================
+       MOBILE NAVIGATION
+       ===================================================== */
+    (function() {
+      const menuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      
+      menuToggle.addEventListener('click', function() {
+        const isOpen = mobileNav.classList.contains('active');
+        
+        mobileNav.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', !isOpen);
+        
+        document.body.style.overflow = isOpen ? '' : 'hidden';
+      });
+      
+      mobileNav.querySelectorAll('.mobile-nav__link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          mobileNav.classList.remove('active');
+          menuToggle.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+    })();
+
+    /* =====================================================
+       SCROLL REVEAL ANIMATIONS
+       ===================================================== */
+    (function() {
+      const reveals = document.querySelectorAll('.reveal');
+      
+      function checkReveal() {
+        const windowHeight = window.innerHeight;
+        const revealPoint = 100;
+        
+        reveals.forEach(function(element) {
+          const elementTop = element.getBoundingClientRect().top;
+          
+          if (elementTop < windowHeight - revealPoint) {
+            element.classList.add('visible');
+          }
+        });
+      }
+      
+      checkReveal();
+      window.addEventListener('scroll', checkReveal, { passive: true });
+    })();
+
+    /* =====================================================
+       NEWSLETTER FORM
+       ===================================================== */
+    (function() {
+      const form = document.getElementById('newsletter-form');
+      
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        
+        submitBtn.textContent = 'Subscribing...';
+        submitBtn.disabled = true;
+        
+        setTimeout(function() {
+          submitBtn.textContent = 'Subscribed!';
+          form.reset();
+          
+          setTimeout(function() {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+          }, 2000);
+        }, 1500);
+      });
+    })();
+
+    /* =====================================================
+       SMOOTH SCROLL FOR ANCHOR LINKS
+       ===================================================== */
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

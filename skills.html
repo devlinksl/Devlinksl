@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Expertise | Dev-Link SL - Technologies & Tools</title>
+  <meta name="description" content="Explore the technologies and tools used by the Dev-Link community. From JavaScript and Python to React, Flutter, and cloud platforms.">
+  <meta name="keywords" content="Dev-Link, Expertise, Technologies, JavaScript, Python, React, Next.js, Flutter, Sierra Leone, Software Development">
+  <meta name="author" content="Dev-Link SL">
+  <meta property="og:title" content="Our Expertise | Dev-Link SL">
+  <meta property="og:description" content="Technologies and tools used by the Dev-Link developer community.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://devlink-sl.vercel.app/skills.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>D</text></svg>">
+  <style>
+    :root {
+      --bg-primary: #FAFAFA; --bg-secondary: #FFFFFF; --bg-tertiary: #F5F5F7;
+      --text-primary: #0F172A; --text-secondary: #475569; --text-tertiary: #64748B;
+      --border-color: #E5E7EB; --border-light: #F1F5F9;
+      --accent-primary: #2563EB; --accent-hover: #1D4ED8;
+      --accent-light: rgba(37, 99, 235, 0.1); --accent-glow: rgba(37, 99, 235, 0.15);
+      --success: #10B981; --success-light: rgba(16, 185, 129, 0.1);
+      --warning: #F59E0B; --warning-light: rgba(245, 158, 11, 0.1);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04); --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08); --shadow-xl: 0 24px 60px rgba(0,0,0,0.12);
+      --shadow-glow: 0 0 40px rgba(37,99,235,0.15);
+      --glass-bg: rgba(255,255,255,0.8); --glass-border: rgba(255,255,255,0.5);
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-size-xs: 0.75rem; --font-size-sm: 0.875rem; --font-size-base: 1rem;
+      --font-size-lg: 1.125rem; --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem;
+      --font-size-3xl: 2rem; --font-size-4xl: 2.5rem; --font-size-5xl: 3.5rem;
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem;
+      --radius-xl: 1rem; --radius-2xl: 1.5rem; --radius-full: 9999px;
+      --transition-fast: 150ms ease; --transition-base: 250ms ease; --transition-slow: 400ms ease;
+    }
+    [data-theme="dark"] {
+      --bg-primary: #0B0F14; --bg-secondary: #111827; --bg-tertiary: #1F2937;
+      --text-primary: #F9FAFB; --text-secondary: #D1D5DB; --text-tertiary: #9CA3AF;
+      --border-color: #374151; --border-light: #1F2937;
+      --accent-light: rgba(59,130,246,0.15); --accent-glow: rgba(59,130,246,0.2);
+      --accent-primary: #3B82F6; --accent-hover: #60A5FA;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2); --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.4); --shadow-xl: 0 24px 60px rgba(0,0,0,0.5);
+      --shadow-glow: 0 0 60px rgba(59,130,246,0.2);
+      --glass-bg: rgba(17,24,39,0.8); --glass-border: rgba(55,65,81,0.5);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{font-family:var(--font-family);font-size:var(--font-size-base);line-height:1.6;color:var(--text-primary);background-color:var(--bg-primary);overflow-x:hidden;transition:background-color var(--transition-slow),color var(--transition-slow)}
+    a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:block}button{font-family:inherit;cursor:pointer;border:none;background:none}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--space-6)}
+    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--glass-bg);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-light);transition:all var(--transition-base)}
+    .header__inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1200px;margin:0 auto;padding:0 var(--space-6)}
+    .header__logo{font-size:var(--font-size-xl);font-weight:700;color:var(--text-primary);letter-spacing:-0.02em}
+    .header__logo span{color:var(--accent-primary)}
+    .nav__list{display:none;list-style:none;gap:var(--space-1)}
+    .nav__link{display:block;padding:var(--space-2) var(--space-4);font-size:var(--font-size-sm);font-weight:500;color:var(--text-secondary);border-radius:var(--radius-full);transition:all var(--transition-fast)}
+    .nav__link:hover{color:var(--text-primary);background:var(--accent-light)}
+    .nav__link--active{color:var(--accent-primary);background:var(--accent-light)}
+    .header__actions{display:flex;align-items:center;gap:var(--space-3)}
+    .theme-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:var(--radius-full);color:var(--text-secondary);background:var(--bg-tertiary);border:1px solid var(--border-color);transition:all var(--transition-fast)}
+    .theme-toggle:hover{color:var(--text-primary);background:var(--accent-light);border-color:var(--accent-primary);transform:scale(1.05)}
+    .theme-toggle svg{width:20px;height:20px}
+    .mobile-menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;width:40px;height:40px;border-radius:var(--radius-lg);background:var(--bg-tertiary);border:1px solid var(--border-color)}
+    .mobile-menu-toggle__line{display:block;width:18px;height:2px;background:var(--text-primary);border-radius:var(--radius-full);transition:all var(--transition-fast)}
+    .mobile-menu-toggle__line+.mobile-menu-toggle__line{margin-top:4px}
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(2){opacity:0}
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+    .mobile-nav{position:fixed;top:72px;left:0;right:0;bottom:0;z-index:999;background:var(--bg-primary);padding:var(--space-8) var(--space-6);opacity:0;visibility:hidden;transform:translateY(-10px);transition:all var(--transition-base)}
+    .mobile-nav.active{opacity:1;visibility:visible;transform:translateY(0)}
+    .mobile-nav__list{list-style:none;display:flex;flex-direction:column;gap:var(--space-2)}
+    .mobile-nav__link{display:block;padding:var(--space-4) var(--space-5);font-size:var(--font-size-lg);font-weight:500;color:var(--text-secondary);border-radius:var(--radius-xl);transition:all var(--transition-fast)}
+    .mobile-nav__link:hover,.mobile-nav__link--active{color:var(--accent-primary);background:var(--accent-light)}
+    .hero{position:relative;min-height:50vh;display:flex;align-items:center;padding:calc(72px + var(--space-16)) 0 var(--space-16);overflow:hidden}
+    .hero__bg{position:absolute;inset:0;overflow:hidden;z-index:-1}
+    .hero__gradient{position:absolute;width:600px;height:600px;border-radius:50%;filter:blur(120px);opacity:0.4;animation:float 20s ease-in-out infinite}
+    .hero__gradient--1{top:-200px;left:-100px;background:var(--accent-primary)}
+    .hero__gradient--2{bottom:-200px;right:-100px;background:var(--accent-hover);animation-delay:-10s}
+    @keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-30px) scale(1.1)}}
+    .hero__content{position:relative;z-index:1;max-width:700px}
+    .hero__label{display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-4);font-size:var(--font-size-sm);font-weight:600;color:var(--accent-primary);background:var(--accent-light);border-radius:var(--radius-full);margin-bottom:var(--space-6)}
+    .hero__label svg{width:16px;height:16px}
+    .hero__title{font-size:clamp(var(--font-size-3xl),6vw,var(--font-size-5xl));font-weight:800;line-height:1.1;letter-spacing:-0.03em;color:var(--text-primary);margin-bottom:var(--space-6)}
+    .hero__title span{background:linear-gradient(135deg,var(--accent-primary),var(--accent-hover));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero__description{font-size:var(--font-size-lg);line-height:1.7;color:var(--text-secondary);max-width:560px}
+    .section{padding:var(--space-20) 0}.section--alt{background:var(--bg-tertiary)}
+    .section-header{margin-bottom:var(--space-12)}.section-header--center{text-align:center}
+    .section-label{display:inline-block;font-size:var(--font-size-sm);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent-primary);margin-bottom:var(--space-3)}
+    .section-title{font-size:var(--font-size-3xl);font-weight:800;color:var(--text-primary);letter-spacing:-0.02em;margin-bottom:var(--space-4)}
+    .section-description{font-size:var(--font-size-lg);color:var(--text-secondary);max-width:600px}
+    .section-header--center .section-description{margin:0 auto}
+    .skills-grid{display:grid;grid-template-columns:1fr;gap:var(--space-6)}
+    .skill-card{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:var(--radius-xl);padding:var(--space-6);transition:all var(--transition-base)}
+    .skill-card:hover{border-color:var(--accent-primary);box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+    .skill-card__icon{display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:var(--accent-light);border-radius:var(--radius-lg);margin-bottom:var(--space-4)}
+    .skill-card__icon svg{width:28px;height:28px;color:var(--accent-primary)}
+    .skill-card__title{font-size:var(--font-size-xl);font-weight:700;color:var(--text-primary);margin-bottom:var(--space-3)}
+    .skill-card__description{font-size:var(--font-size-base);color:var(--text-secondary);line-height:1.6;margin-bottom:var(--space-4)}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+    .skill-tag{display:inline-block;padding:var(--space-1) var(--space-3);font-size:var(--font-size-sm);font-weight:500;background:var(--bg-tertiary);color:var(--text-secondary);border-radius:var(--radius-full)}
+    .skill-badge{display:inline-block;padding:var(--space-1) var(--space-3);font-size:var(--font-size-xs);font-weight:600;border-radius:var(--radius-full);margin-top:var(--space-3)}
+    .skill-badge--expert{background:var(--success-light);color:var(--success)}
+    .skill-badge--advanced{background:var(--accent-light);color:var(--accent-primary)}
+    .skill-badge--intermediate{background:var(--warning-light);color:var(--warning)}
+    .skill-progress{margin-top:var(--space-4)}
+    .skill-progress__label{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-2);font-size:var(--font-size-sm)}
+    .skill-progress__name{color:var(--text-primary);font-weight:500}
+    .skill-progress__percent{color:var(--accent-primary);font-weight:600}
+    .skill-progress__bar{height:8px;background:var(--bg-tertiary);border-radius:var(--radius-full);overflow:hidden}
+    .skill-progress__fill{height:100%;background:linear-gradient(90deg,var(--accent-primary),var(--accent-hover));border-radius:var(--radius-full);transition:width 1s ease}
+    .tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4)}
+    .tool-item{display:flex;align-items:center;gap:var(--space-3);padding:var(--space-4);background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:var(--radius-lg);transition:all var(--transition-fast)}
+    .tool-item:hover{border-color:var(--accent-primary);background:var(--accent-light)}
+    .tool-item__icon{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--bg-tertiary);border-radius:var(--radius-md)}
+    .tool-item__icon svg{width:20px;height:20px;color:var(--accent-primary)}
+    .tool-item__name{font-size:var(--font-size-sm);font-weight:500;color:var(--text-primary)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);padding:var(--space-3) var(--space-6);font-size:var(--font-size-sm);font-weight:600;border-radius:var(--radius-full);transition:all var(--transition-base)}
+    .btn--primary{background:var(--accent-primary);color:#FFF;box-shadow:var(--shadow-md),0 0 20px rgba(37,99,235,0.3)}
+    .btn--primary:hover{background:var(--accent-hover);transform:translateY(-2px)}
+    .btn--white{background:#FFF;color:var(--accent-primary)}.btn--white:hover{background:rgba(255,255,255,0.9);transform:translateY(-2px)}
+    .btn--outline-white{background:transparent;color:#FFF;border:2px solid rgba(255,255,255,0.3)}
+    .btn--outline-white:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.5)}
+    .btn svg{width:16px;height:16px}
+    .cta-section{padding:var(--space-20) 0}
+    .cta-card{position:relative;background:linear-gradient(135deg,var(--accent-primary),var(--accent-hover));border-radius:var(--radius-2xl);padding:var(--space-12) var(--space-8);text-align:center;overflow:hidden}
+    .cta-card::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:rgba(255,255,255,0.1);border-radius:50%}
+    .cta-card__content{position:relative;z-index:1;max-width:600px;margin:0 auto}
+    .cta-card__title{font-size:var(--font-size-3xl);font-weight:700;color:#FFF;margin-bottom:var(--space-4)}
+    .cta-card__description{font-size:var(--font-size-lg);color:rgba(255,255,255,0.9);margin-bottom:var(--space-8)}
+    .cta-buttons{display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:center}
+    .footer{background:var(--bg-secondary);border-top:1px solid var(--border-color);padding:var(--space-16) 0 var(--space-8)}
+    .footer__grid{display:grid;grid-template-columns:1fr;gap:var(--space-10);margin-bottom:var(--space-12)}
+    .footer__brand{max-width:320px}
+    .footer__logo{font-size:var(--font-size-2xl);font-weight:700;color:var(--text-primary);margin-bottom:var(--space-4)}
+    .footer__logo span{color:var(--accent-primary)}
+    .footer__description{font-size:var(--font-size-base);color:var(--text-secondary);line-height:1.7;margin-bottom:var(--space-6)}
+    .footer__social{display:flex;gap:var(--space-3)}
+    .footer__social-link{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:var(--radius-lg);color:var(--text-secondary);transition:all var(--transition-fast)}
+    .footer__social-link:hover{background:var(--accent-light);border-color:var(--accent-primary);color:var(--accent-primary);transform:translateY(-2px)}
+    .footer__social-link svg{width:18px;height:18px}
+    .footer__nav-title{font-size:var(--font-size-sm);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-primary);margin-bottom:var(--space-4)}
+    .footer__nav-list{list-style:none;display:flex;flex-direction:column;gap:var(--space-3)}
+    .footer__nav-link{font-size:var(--font-size-base);color:var(--text-secondary);transition:color var(--transition-fast)}
+    .footer__nav-link:hover{color:var(--accent-primary)}
+    .footer__bottom{display:flex;flex-direction:column;gap:var(--space-4);padding-top:var(--space-8);border-top:1px solid var(--border-color);text-align:center}
+    .footer__copyright{font-size:var(--font-size-sm);color:var(--text-tertiary)}
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity 0.8s ease,transform 0.8s ease}
+    .reveal.revealed{opacity:1;transform:translateY(0)}
+    .reveal--delay-1{transition-delay:0.1s}.reveal--delay-2{transition-delay:0.2s}.reveal--delay-3{transition-delay:0.3s}
+    @media(min-width:768px){.nav__list{display:flex}.mobile-menu-toggle{display:none}.skills-grid{grid-template-columns:repeat(2,1fr)}.tools-grid{grid-template-columns:repeat(3,1fr)}.footer__grid{grid-template-columns:2fr 1fr 1fr}.footer__bottom{flex-direction:row;justify-content:space-between;text-align:left}}
+    @media(min-width:1024px){.skills-grid{grid-template-columns:repeat(3,1fr)}.tools-grid{grid-template-columns:repeat(4,1fr)}.footer__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Dev-Link<span>.</span></a>
+      <nav class="nav" role="navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="skills.html" class="nav__link nav__link--active">Expertise</a></li>
+          <li><a href="projects.html" class="nav__link">Projects</a></li>
+          <li><a href="writing.html" class="nav__link">Writing</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu"><span class="mobile-menu-toggle__line"></span><span class="mobile-menu-toggle__line"></span><span class="mobile-menu-toggle__line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="skills.html" class="mobile-nav__link mobile-nav__link--active">Expertise</a></li>
+      <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+      <li><a href="writing.html" class="mobile-nav__link">Writing</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" role="main">
+    <section class="hero" aria-labelledby="skills-title">
+      <div class="hero__bg"><div class="hero__gradient hero__gradient--1"></div><div class="hero__gradient hero__gradient--2"></div></div>
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__label reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>Expertise</span>
+          <h1 id="skills-title" class="hero__title reveal reveal--delay-1">Our <span>Expertise</span></h1>
+          <p class="hero__description reveal reveal--delay-2">Technologies and tools used by the <strong>Dev-Link</strong> community. Our developers specialize in modern stacks that power scalable, production-ready applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="languages-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Core</span>
+          <h2 id="languages-title" class="section-title">Programming Languages</h2>
+          <p class="section-description">The foundational languages our developers use daily to build robust software solutions.</p>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+            <h3 class="skill-card__title">JavaScript</h3>
+            <p class="skill-card__description">The backbone of modern web development. Used extensively for both frontend interfaces and backend services.</p>
+            <div class="skill-progress"><div class="skill-progress__label"><span class="skill-progress__name">Community Proficiency</span><span class="skill-progress__percent">95%</span></div><div class="skill-progress__bar"><div class="skill-progress__fill" style="width:95%"></div></div></div>
+            <span class="skill-badge skill-badge--expert">Core Language</span>
+          </article>
+          <article class="skill-card reveal reveal--delay-1">
+            <div class="skill-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg></div>
+            <h3 class="skill-card__title">TypeScript</h3>
+            <p class="skill-card__description">Type-safe JavaScript for building maintainable, large-scale applications with confidence.</p>
+            <div class="skill-progress"><div class="skill-progress__label"><span class="skill-progress__name">Community Proficiency</span><span class="skill-progress__percent">90%</span></div><div class="skill-progress__bar"><div class="skill-progress__fill" style="width:90%"></div></div></div>
+            <span class="skill-badge skill-badge--expert">Core Language</span>
+          </article>
+          <article class="skill-card reveal reveal--delay-2">
+            <div class="skill-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
+            <h3 class="skill-card__title">Python</h3>
+            <p class="skill-card__description">Backend services, data processing, machine learning, and automation scripts for diverse projects.</p>
+            <div class="skill-progress"><div class="skill-progress__label"><span class="skill-progress__name">Community Proficiency</span><span class="skill-progress__percent">85%</span></div><div class="skill-progress__bar"><div class="skill-progress__fill" style="width:85%"></div></div></div>
+            <span class="skill-badge skill-badge--advanced">Advanced</span>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"></path><path d="M18 20V4"></path><path d="M6 20v-4"></path></svg></div>
+            <h3 class="skill-card__title">PHP</h3>
+            <p class="skill-card__description">Server-side scripting for dynamic websites and robust backend systems using Laravel and other frameworks.</p>
+            <div class="skill-progress"><div class="skill-progress__label"><span class="skill-progress__name">Community Proficiency</span><span class="skill-progress__percent">80%</span></div><div class="skill-progress__bar"><div class="skill-progress__fill" style="width:80%"></div></div></div>
+            <span class="skill-badge skill-badge--advanced">Advanced</span>
+          </article>
+          <article class="skill-card reveal reveal--delay-1">
+            <div class="skill-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></div>
+            <h3 class="skill-card__title">Java</h3>
+            <p class="skill-card__description">Enterprise-grade applications, Android development, and high-performance backend systems.</p>
+            <div class="skill-progress"><div class="skill-progress__label"><span class="skill-progress__name">Community Proficiency</span><span class="skill-progress__percent">75%</span></div><div class="skill-progress__bar"><div class="skill-progress__fill" style="width:75%"></div></div></div>
+            <span class="skill-badge skill-badge--intermediate">Intermediate</span>
+          </article>
+          <article class="skill-card reveal reveal--delay-2">
+            <div class="skill-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+            <h3 class="skill-card__title">C / C++</h3>
+            <p class="skill-card__description">Systems programming, performance-critical applications, and embedded systems development.</p>
+            <div class="skill-progress"><div class="skill-progress__label"><span class="skill-progress__name">Community Proficiency</span><span class="skill-progress__percent">65%</span></div><div class="skill-progress__bar"><div class="skill-progress__fill" style="width:65%"></div></div></div>
+            <span class="skill-badge skill-badge--intermediate">Intermediate</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="frameworks-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Frameworks</span>
+          <h2 id="frameworks-title" class="section-title">Frameworks & Libraries</h2>
+          <p class="section-description">Modern frameworks our team leverages to ship production-ready applications fast.</p>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><h3 class="skill-card__title">React</h3><p class="skill-card__description">Component-based UI development powering interactive, high-performance web applications.</p><div class="skill-tags"><span class="skill-tag">React 18+</span><span class="skill-tag">Hooks</span><span class="skill-tag">Context API</span></div></article>
+          <article class="skill-card reveal reveal--delay-1"><h3 class="skill-card__title">Next.js</h3><p class="skill-card__description">Full-stack React framework with SSR, SSG, and API routes for production-grade applications.</p><div class="skill-tags"><span class="skill-tag">App Router</span><span class="skill-tag">Server Components</span><span class="skill-tag">Edge</span></div></article>
+          <article class="skill-card reveal reveal--delay-2"><h3 class="skill-card__title">Node.js</h3><p class="skill-card__description">JavaScript runtime for building fast, scalable server applications and REST APIs.</p><div class="skill-tags"><span class="skill-tag">Express</span><span class="skill-tag">NestJS</span><span class="skill-tag">Fastify</span></div></article>
+          <article class="skill-card reveal"><h3 class="skill-card__title">Laravel</h3><p class="skill-card__description">Elegant PHP framework for building robust web applications with clean, expressive syntax.</p><div class="skill-tags"><span class="skill-tag">Blade</span><span class="skill-tag">Eloquent</span><span class="skill-tag">Livewire</span></div></article>
+          <article class="skill-card reveal reveal--delay-1"><h3 class="skill-card__title">Django</h3><p class="skill-card__description">High-level Python framework for rapid development and clean, pragmatic design.</p><div class="skill-tags"><span class="skill-tag">Django REST</span><span class="skill-tag">ORM</span><span class="skill-tag">Admin</span></div></article>
+          <article class="skill-card reveal reveal--delay-2"><h3 class="skill-card__title">Tailwind CSS</h3><p class="skill-card__description">Utility-first CSS framework for rapidly building modern, responsive user interfaces.</p><div class="skill-tags"><span class="skill-tag">Tailwind v3+</span><span class="skill-tag">DaisyUI</span><span class="skill-tag">Headless UI</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mobile-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Mobile</span>
+          <h2 id="mobile-title" class="section-title">Mobile & Cross-Platform</h2>
+          <p class="section-description">Building native and cross-platform mobile applications for iOS and Android.</p>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><h3 class="skill-card__title">Flutter</h3><p class="skill-card__description">Google's UI toolkit for building natively compiled mobile, web, and desktop apps from a single codebase.</p><div class="skill-tags"><span class="skill-tag">Dart</span><span class="skill-tag">Material Design</span><span class="skill-tag">Cross-Platform</span></div></article>
+          <article class="skill-card reveal reveal--delay-1"><h3 class="skill-card__title">React Native</h3><p class="skill-card__description">Build native mobile apps using React and JavaScript for both iOS and Android platforms.</p><div class="skill-tags"><span class="skill-tag">Expo</span><span class="skill-tag">React Navigation</span><span class="skill-tag">Native Modules</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="databases-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Data</span>
+          <h2 id="databases-title" class="section-title">Databases & Backend</h2>
+          <p class="section-description">Relational and NoSQL databases powering our applications with reliable data storage.</p>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><h3 class="skill-card__title">MySQL</h3><p class="skill-card__description">Industry-standard relational database for structured data and complex queries.</p><div class="skill-tags"><span class="skill-tag">InnoDB</span><span class="skill-tag">Replication</span><span class="skill-tag">Optimization</span></div></article>
+          <article class="skill-card reveal reveal--delay-1"><h3 class="skill-card__title">PostgreSQL</h3><p class="skill-card__description">Advanced open-source relational database with powerful extensions and JSON support.</p><div class="skill-tags"><span class="skill-tag">Supabase</span><span class="skill-tag">PostGIS</span><span class="skill-tag">JSONB</span></div></article>
+          <article class="skill-card reveal reveal--delay-2"><h3 class="skill-card__title">MongoDB</h3><p class="skill-card__description">Flexible NoSQL document database for rapid development and horizontal scaling.</p><div class="skill-tags"><span class="skill-tag">Mongoose</span><span class="skill-tag">Atlas</span><span class="skill-tag">Aggregation</span></div></article>
+          <article class="skill-card reveal"><h3 class="skill-card__title">Firebase</h3><p class="skill-card__description">Google's platform for real-time databases, authentication, and serverless functions.</p><div class="skill-tags"><span class="skill-tag">Firestore</span><span class="skill-tag">Auth</span><span class="skill-tag">Cloud Functions</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="section-label">DevOps</span>
+          <h2 id="tools-title" class="section-title">DevOps & Tools</h2>
+          <p class="section-description">The tools and platforms the Dev-Link community uses daily to build, test, and deploy software.</p>
+        </header>
+        <div class="tools-grid reveal">
+          <article class="tool-item"><div class="tool-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg></div><span class="tool-item__name">Git & GitHub</span></article>
+          <article class="tool-item"><div class="tool-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></div><span class="tool-item__name">Docker</span></article>
+          <article class="tool-item"><div class="tool-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div><span class="tool-item__name">Linux</span></article>
+          <article class="tool-item"><div class="tool-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div><span class="tool-item__name">REST APIs</span></article>
+          <article class="tool-item"><div class="tool-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div><span class="tool-item__name">VS Code</span></article>
+          <article class="tool-item"><div class="tool-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg></div><span class="tool-item__name">Figma</span></article>
+          <article class="tool-item"><div class="tool-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div><span class="tool-item__name">Vercel</span></article>
+          <article class="tool-item"><div class="tool-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div><span class="tool-item__name">AWS</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-card__content">
+            <h2 class="cta-card__title">Ready to Build With Us?</h2>
+            <p class="cta-card__description">Our team of skilled developers is ready to bring your project to life using the latest technologies.</p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn--white">Start a Project<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              <a href="projects.html" class="btn btn--outline-white">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Dev-Link<span>.</span></div>
+          <p class="footer__description">Dev-Link SL is a developer-focused software agency building digital solutions for businesses across Sierra Leone and Africa.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+            <a href="#" class="footer__social-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__nav-title">Navigation</h4>
+          <ul class="footer__nav-list">
+            <li><a href="index.html" class="footer__nav-link">Home</a></li>
+            <li><a href="about.html" class="footer__nav-link">About</a></li>
+            <li><a href="skills.html" class="footer__nav-link">Expertise</a></li>
+            <li><a href="projects.html" class="footer__nav-link">Projects</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__nav-title">Resources</h4>
+          <ul class="footer__nav-list">
+            <li><a href="writing.html" class="footer__nav-link">Writing</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__nav-title">Services</h4>
+          <ul class="footer__nav-list">
+            <li><span class="footer__nav-link">Web Development</span></li>
+            <li><span class="footer__nav-link">Mobile Apps</span></li>
+            <li><span class="footer__nav-link">Custom Software</span></li>
+            <li><span class="footer__nav-link">UI/UX Design</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Dev-Link SL. All rights reserved. Software Agency, Sierra Leone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){const THEME_KEY='devlink-theme';function getStoredTheme(){return localStorage.getItem(THEME_KEY)}function setStoredTheme(t){localStorage.setItem(THEME_KEY,t)}function getPreferredTheme(){const s=getStoredTheme();if(s)return s;return window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'}function applyTheme(t){document.documentElement.setAttribute('data-theme',t);updateThemeIcon(t)}function updateThemeIcon(t){const s=document.querySelector('.sun-icon'),m=document.querySelector('.moon-icon');if(s&&m){s.style.display=t==='dark'?'none':'block';m.style.display=t==='dark'?'block':'none'}}applyTheme(getPreferredTheme());document.addEventListener('DOMContentLoaded',function(){const b=document.getElementById('themeToggle');if(b){b.addEventListener('click',function(){const c=document.documentElement.getAttribute('data-theme');const n=c==='dark'?'light':'dark';applyTheme(n);setStoredTheme(n)})}updateThemeIcon(getPreferredTheme())})})();
+    document.addEventListener('DOMContentLoaded',function(){const t=document.getElementById('mobileMenuToggle'),n=document.getElementById('mobileNav');if(t&&n){t.addEventListener('click',function(){this.classList.toggle('active');n.classList.toggle('active');document.body.style.overflow=n.classList.contains('active')?'hidden':''})}});
+    document.addEventListener('DOMContentLoaded',function(){const r=document.querySelectorAll('.reveal');const o=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting){en.target.classList.add('revealed');o.unobserve(en.target)}})},{threshold:0.1});r.forEach(function(el){o.observe(el)})});
+    document.addEventListener('DOMContentLoaded',function(){const p=document.querySelectorAll('.skill-progress__fill');const o=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting){const b=en.target;const w=b.style.width;b.style.width='0';setTimeout(function(){b.style.width=w},100);o.unobserve(b)}})},{threshold:0.5});p.forEach(function(b){o.observe(b)})});
+  </script>
+</body>
+</html>

@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>About DevLink | Software Agency in Sierra Leone</title>
+  <meta name="description" content="Learn about DevLink, Sierra Leone's leading software agency. We build stunning websites, mobile apps, and custom software solutions for businesses across Africa.">
+  <meta name="keywords" content="DevLink, About, Software Agency, Sierra Leone, Web Development, Mobile Apps, Tech Company, Africa, Developer Network">
+  <meta name="author" content="DevLink SL">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About DevLink - Software Agency in Sierra Leone">
+  <meta property="og:description" content="DevLink is a developer-focused software agency building digital solutions for businesses across Sierra Leone and Africa.">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://devlink-sl.vercel.app/about.html">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>D</text></svg>">
+
+  <style>
+    /* =====================================================
+       CSS VARIABLES & THEME SYSTEM
+       ===================================================== */
+    :root {
+      --bg-primary: #FAFAFA;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F5F5F7;
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --text-tertiary: #64748B;
+      --border-color: #E5E7EB;
+      --border-light: #F1F5F9;
+      --accent-primary: #2563EB;
+      --accent-hover: #1D4ED8;
+      --accent-light: rgba(37, 99, 235, 0.1);
+      --accent-glow: rgba(37, 99, 235, 0.15);
+      --success: #10B981;
+      --success-light: rgba(16, 185, 129, 0.1);
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08);
+      --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.12);
+      --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.15);
+      --glass-bg: rgba(255, 255, 255, 0.8);
+      --glass-border: rgba(255, 255, 255, 0.5);
+      
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 2rem;
+      --font-size-4xl: 2.5rem;
+      --font-size-5xl: 3.5rem;
+      
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+      --radius-2xl: 1.5rem;
+      --radius-full: 9999px;
+      
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --transition-slow: 400ms ease;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0B0F14;
+      --bg-secondary: #111827;
+      --bg-tertiary: #1F2937;
+      --text-primary: #F9FAFB;
+      --text-secondary: #D1D5DB;
+      --text-tertiary: #9CA3AF;
+      --border-color: #374151;
+      --border-light: #1F2937;
+      --accent-light: rgba(59, 130, 246, 0.15);
+      --accent-glow: rgba(59, 130, 246, 0.2);
+      --accent-primary: #3B82F6;
+      --accent-hover: #60A5FA;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.4);
+      --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 60px rgba(59, 130, 246, 0.2);
+      --glass-bg: rgba(17, 24, 39, 0.8);
+      --glass-border: rgba(55, 65, 81, 0.5);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body {
+      font-family: var(--font-family);
+      font-size: var(--font-size-base);
+      line-height: 1.6;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
+      overflow-x: hidden;
+      transition: background-color var(--transition-slow), color var(--transition-slow);
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); }
+
+    /* Header */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: var(--glass-bg); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-light);
+      transition: all var(--transition-base);
+    }
+    .header__inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6);
+    }
+    .header__logo {
+      font-size: var(--font-size-xl); font-weight: 700;
+      color: var(--text-primary); letter-spacing: -0.02em;
+    }
+    .header__logo span { color: var(--accent-primary); }
+    .nav__list { display: none; list-style: none; gap: var(--space-1); }
+    .nav__link {
+      display: block; padding: var(--space-2) var(--space-4);
+      font-size: var(--font-size-sm); font-weight: 500;
+      color: var(--text-secondary); border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
+    }
+    .nav__link:hover { color: var(--text-primary); background: var(--accent-light); }
+    .nav__link--active { color: var(--accent-primary); background: var(--accent-light); }
+    .header__actions { display: flex; align-items: center; gap: var(--space-3); }
+    .theme-toggle {
+      display: flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: var(--radius-full);
+      color: var(--text-secondary); background: var(--bg-tertiary);
+      border: 1px solid var(--border-color); transition: all var(--transition-fast);
+    }
+    .theme-toggle:hover {
+      color: var(--text-primary); background: var(--accent-light);
+      border-color: var(--accent-primary); transform: scale(1.05);
+    }
+    .theme-toggle svg { width: 20px; height: 20px; }
+    .mobile-menu-toggle {
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      width: 40px; height: 40px; border-radius: var(--radius-lg);
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+    }
+    .mobile-menu-toggle__line {
+      display: block; width: 18px; height: 2px;
+      background: var(--text-primary); border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
+    }
+    .mobile-menu-toggle__line + .mobile-menu-toggle__line { margin-top: 4px; }
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(2) { opacity: 0; }
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+    .mobile-nav {
+      position: fixed; top: 72px; left: 0; right: 0; bottom: 0; z-index: 999;
+      background: var(--bg-primary); padding: var(--space-8) var(--space-6);
+      opacity: 0; visibility: hidden; transform: translateY(-10px);
+      transition: all var(--transition-base);
+    }
+    .mobile-nav.active { opacity: 1; visibility: visible; transform: translateY(0); }
+    .mobile-nav__list { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+    .mobile-nav__link {
+      display: block; padding: var(--space-4) var(--space-5);
+      font-size: var(--font-size-lg); font-weight: 500;
+      color: var(--text-secondary); border-radius: var(--radius-xl);
+      transition: all var(--transition-fast);
+    }
+    .mobile-nav__link:hover, .mobile-nav__link--active {
+      color: var(--accent-primary); background: var(--accent-light);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative; min-height: 80vh; display: flex; align-items: center;
+      padding: calc(72px + var(--space-16)) 0 var(--space-16); overflow: hidden;
+    }
+    .hero__bg { position: absolute; inset: 0; overflow: hidden; z-index: -1; }
+    .hero__gradient {
+      position: absolute; width: 600px; height: 600px; border-radius: 50%;
+      filter: blur(120px); opacity: 0.4; animation: float 20s ease-in-out infinite;
+    }
+    .hero__gradient--1 { top: -200px; left: -100px; background: var(--accent-primary); }
+    .hero__gradient--2 { bottom: -200px; right: -100px; background: var(--accent-hover); animation-delay: -10s; }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, -30px) scale(1.1); }
+    }
+    .hero__content {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-12); align-items: center;
+    }
+    .hero__label {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm);
+      font-weight: 600; color: var(--accent-primary); background: var(--accent-light);
+      border-radius: var(--radius-full); margin-bottom: var(--space-6);
+    }
+    .hero__label svg { width: 16px; height: 16px; }
+    .hero__title {
+      font-size: clamp(var(--font-size-3xl), 6vw, var(--font-size-5xl));
+      font-weight: 800; line-height: 1.1; letter-spacing: -0.03em;
+      color: var(--text-primary); margin-bottom: var(--space-6);
+    }
+    .hero__title span {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero__description {
+      font-size: var(--font-size-lg); line-height: 1.7;
+      color: var(--text-secondary); max-width: 560px; margin-bottom: var(--space-8);
+    }
+    .hero__image { position: relative; }
+    .hero__image-wrapper {
+      position: relative; border-radius: var(--radius-2xl);
+      overflow: hidden; box-shadow: var(--shadow-xl);
+    }
+    .hero__image-wrapper::before {
+      content: ''; position: absolute; inset: -3px;
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      border-radius: var(--radius-2xl); z-index: -1;
+    }
+    .hero__image-wrapper img { width: 100%; height: auto; border-radius: var(--radius-2xl); }
+    .hero__image-caption {
+      text-align: center; margin-top: var(--space-4);
+      font-size: var(--font-size-sm); color: var(--text-tertiary); font-weight: 500;
+    }
+    .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-3) var(--space-6);
+      font-size: var(--font-size-sm); font-weight: 600;
+      border-radius: var(--radius-full); transition: all var(--transition-base);
+    }
+    .btn--primary {
+      background: var(--accent-primary); color: #FFFFFF;
+      box-shadow: var(--shadow-md), 0 0 20px rgba(37, 99, 235, 0.3);
+    }
+    .btn--primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+    .btn--secondary {
+      background: var(--bg-secondary); color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+    .btn--secondary:hover { background: var(--bg-tertiary); border-color: var(--accent-primary); }
+    .btn svg { width: 16px; height: 16px; }
+
+    /* Sections */
+    .section { padding: var(--space-20) 0; }
+    .section--alt { background: var(--bg-tertiary); }
+    .section-header { margin-bottom: var(--space-12); }
+    .section-header--center { text-align: center; }
+    .section-label {
+      display: inline-block; font-size: var(--font-size-sm); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--accent-primary); margin-bottom: var(--space-3);
+    }
+    .section-title {
+      font-size: var(--font-size-3xl); font-weight: 800;
+      color: var(--text-primary); letter-spacing: -0.02em; margin-bottom: var(--space-4);
+    }
+    .section-description { font-size: var(--font-size-lg); color: var(--text-secondary); max-width: 600px; }
+    .section-header--center .section-description { margin: 0 auto; }
+
+    /* Bio Content */
+    .bio-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-12); }
+    .bio-content { font-size: var(--font-size-lg); color: var(--text-secondary); line-height: 1.8; }
+    .bio-content p { margin-bottom: var(--space-6); }
+    .bio-content strong { color: var(--text-primary); }
+    .bio-sidebar {
+      background: var(--bg-secondary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl); padding: var(--space-6);
+    }
+    .bio-sidebar__title {
+      font-size: var(--font-size-sm); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--text-tertiary); margin-bottom: var(--space-4);
+    }
+    .bio-sidebar__list { list-style: none; display: flex; flex-direction: column; gap: var(--space-3); }
+    .bio-sidebar__item {
+      display: flex; align-items: center; gap: var(--space-3);
+      font-size: var(--font-size-base); color: var(--text-secondary);
+    }
+    .bio-sidebar__item svg { width: 20px; height: 20px; color: var(--accent-primary); flex-shrink: 0; }
+
+    /* Timeline */
+    .timeline { position: relative; padding-left: var(--space-8); }
+    .timeline::before {
+      content: ''; position: absolute; left: 6px; top: 0; bottom: 0;
+      width: 2px; background: var(--border-color);
+    }
+    .timeline__item { position: relative; padding-bottom: var(--space-10); }
+    .timeline__item:last-child { padding-bottom: 0; }
+    .timeline__marker {
+      position: absolute; left: calc(-1 * var(--space-8) + 0px); top: 4px;
+      width: 14px; height: 14px; background: var(--accent-primary);
+      border: 3px solid var(--bg-primary); border-radius: 50%;
+      box-shadow: 0 0 0 3px var(--accent-light);
+    }
+    .timeline__year {
+      display: inline-block; font-size: var(--font-size-sm);
+      font-weight: 600; color: var(--accent-primary); margin-bottom: var(--space-2);
+    }
+    .timeline__title {
+      font-size: var(--font-size-xl); font-weight: 700;
+      color: var(--text-primary); margin-bottom: var(--space-3);
+    }
+    .timeline__description { font-size: var(--font-size-base); color: var(--text-secondary); line-height: 1.7; }
+
+    /* Values Grid */
+    .values-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-6); }
+    .value-card {
+      background: var(--bg-secondary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl); padding: var(--space-8); text-align: center;
+      transition: all var(--transition-base);
+    }
+    .value-card:hover {
+      border-color: var(--accent-primary); box-shadow: var(--shadow-lg), var(--shadow-glow);
+      transform: translateY(-6px);
+    }
+    .value-card__icon {
+      display: flex; align-items: center; justify-content: center;
+      width: 72px; height: 72px; background: var(--accent-light);
+      border-radius: var(--radius-xl); margin: 0 auto var(--space-5);
+    }
+    .value-card__icon svg { width: 36px; height: 36px; color: var(--accent-primary); }
+    .value-card__title {
+      font-size: var(--font-size-xl); font-weight: 700;
+      color: var(--text-primary); margin-bottom: var(--space-3);
+    }
+    .value-card__description { font-size: var(--font-size-base); color: var(--text-secondary); line-height: 1.6; }
+
+    /* Leadership Team */
+    .team-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-8); }
+    .team-card {
+      background: var(--bg-secondary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl); overflow: hidden;
+      transition: all var(--transition-base);
+    }
+    .team-card:hover {
+      border-color: var(--accent-primary); box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+    .team-card__image { aspect-ratio: 1; overflow: hidden; background: var(--bg-tertiary); }
+    .team-card__image img { width: 100%; height: 100%; object-fit: cover; }
+    .team-card__content { padding: var(--space-6); text-align: center; }
+    .team-card__name {
+      font-size: var(--font-size-xl); font-weight: 700;
+      color: var(--text-primary); margin-bottom: var(--space-2);
+    }
+    .team-card__role {
+      display: inline-block; padding: var(--space-1) var(--space-3);
+      font-size: var(--font-size-sm); font-weight: 600;
+      color: var(--accent-primary); background: var(--accent-light);
+      border-radius: var(--radius-full); margin-bottom: var(--space-3);
+    }
+    .team-card__bio { font-size: var(--font-size-base); color: var(--text-secondary); line-height: 1.6; }
+
+    /* Quote Section */
+    .quote-section {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      padding: var(--space-16) 0;
+    }
+    .quote-card { max-width: 800px; margin: 0 auto; text-align: center; }
+    .quote-card__text {
+      font-size: var(--font-size-2xl); font-weight: 500;
+      color: #FFFFFF; line-height: 1.6; margin-bottom: var(--space-6);
+    }
+    .quote-card__author { font-size: var(--font-size-base); color: rgba(255, 255, 255, 0.8); }
+    .quote-card__author strong { color: #FFFFFF; }
+
+    /* Stats */
+    .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+    .stat-card {
+      background: var(--bg-secondary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl); padding: var(--space-6); text-align: center;
+    }
+    .stat-card__number {
+      font-size: var(--font-size-4xl); font-weight: 800;
+      color: var(--accent-primary); margin-bottom: var(--space-2);
+    }
+    .stat-card__label { font-size: var(--font-size-sm); color: var(--text-secondary); }
+
+    /* CTA */
+    .cta-section { padding: var(--space-20) 0; }
+    .cta-card {
+      position: relative;
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      border-radius: var(--radius-2xl); padding: var(--space-12) var(--space-8);
+      text-align: center; overflow: hidden;
+    }
+    .cta-card::before {
+      content: ''; position: absolute; top: -50%; right: -20%;
+      width: 400px; height: 400px; background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+    .cta-card__content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+    .cta-card__title { font-size: var(--font-size-3xl); font-weight: 700; color: #FFFFFF; margin-bottom: var(--space-4); }
+    .cta-card__description { font-size: var(--font-size-lg); color: rgba(255, 255, 255, 0.9); margin-bottom: var(--space-8); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; }
+    .btn--white { background: #FFFFFF; color: var(--accent-primary); }
+    .btn--white:hover { background: rgba(255, 255, 255, 0.9); transform: translateY(-2px); }
+    .btn--outline-white { background: transparent; color: #FFFFFF; border: 2px solid rgba(255, 255, 255, 0.3); }
+    .btn--outline-white:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.5); }
+
+    /* Footer */
+    .footer {
+      background: var(--bg-secondary); border-top: 1px solid var(--border-color);
+      padding: var(--space-16) 0 var(--space-8);
+    }
+    .footer__grid { display: grid; grid-template-columns: 1fr; gap: var(--space-10); margin-bottom: var(--space-12); }
+    .footer__brand { max-width: 320px; }
+    .footer__logo { font-size: var(--font-size-2xl); font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-4); }
+    .footer__logo span { color: var(--accent-primary); }
+    .footer__description { font-size: var(--font-size-base); color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-6); }
+    .footer__social { display: flex; gap: var(--space-3); }
+    .footer__social-link {
+      display: flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; background: var(--bg-tertiary);
+      border: 1px solid var(--border-color); border-radius: var(--radius-lg);
+      color: var(--text-secondary); transition: all var(--transition-fast);
+    }
+    .footer__social-link:hover {
+      background: var(--accent-light); border-color: var(--accent-primary);
+      color: var(--accent-primary); transform: translateY(-2px);
+    }
+    .footer__social-link svg { width: 18px; height: 18px; }
+    .footer__nav-title {
+      font-size: var(--font-size-sm); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--text-primary); margin-bottom: var(--space-4);
+    }
+    .footer__nav-list { list-style: none; display: flex; flex-direction: column; gap: var(--space-3); }
+    .footer__nav-link { font-size: var(--font-size-base); color: var(--text-secondary); transition: color var(--transition-fast); }
+    .footer__nav-link:hover { color: var(--accent-primary); }
+    .footer__bottom {
+      display: flex; flex-direction: column; gap: var(--space-4);
+      padding-top: var(--space-8); border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .footer__copyright { font-size: var(--font-size-sm); color: var(--text-tertiary); }
+
+    /* Animations */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.revealed { opacity: 1; transform: translateY(0); }
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .nav__list { display: flex; }
+      .mobile-menu-toggle { display: none; }
+      .hero__content { grid-template-columns: 1fr 1fr; }
+      .bio-grid { grid-template-columns: 2fr 1fr; }
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-grid { grid-template-columns: repeat(4, 1fr); }
+      .footer__grid { grid-template-columns: 2fr 1fr 1fr; }
+      .footer__bottom { flex-direction: row; justify-content: space-between; text-align: left; }
+    }
+
+    @media (min-width: 1024px) {
+      .values-grid { grid-template-columns: repeat(3, 1fr); }
+      .footer__grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Dev-Link<span>.</span></a>
+      <nav class="nav" role="navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+          <li><a href="projects.html" class="nav__link">Projects</a></li>
+          <li><a href="market360.html" class="nav__link">Market360</a></li>
+          <li><a href="skills.html" class="nav__link">Skills</a></li>
+          <li><a href="writing.html" class="nav__link">Writing</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span class="mobile-menu-toggle__line"></span>
+          <span class="mobile-menu-toggle__line"></span>
+          <span class="mobile-menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+   <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link mobile-nav__link--active">About</a></li>
+      <li><a href="skills.html" class="mobile-nav__link">Expertise</a></li>
+      <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+      <li><a href="writing.html" class="mobile-nav__link">Writing</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="about-title">
+      <div class="hero__bg">
+        <div class="hero__gradient hero__gradient--1"></div>
+        <div class="hero__gradient hero__gradient--2"></div>
+      </div>
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <span class="hero__label reveal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              About DevLink
+            </span>
+            <h1 id="about-title" class="hero__title reveal reveal--delay-1">
+              Building <span>Digital Solutions</span> for Africa
+            </h1>
+            <p class="hero__description reveal reveal--delay-2">
+              DevLink is a developer-focused software agency based in Sierra Leone. We design, 
+              build, and deploy stunning websites, mobile applications, and custom software 
+              solutions that help businesses grow and thrive in the digital economy.
+            </p>
+            <div class="hero__actions reveal reveal--delay-3">
+              <a href="contact.html" class="btn btn--primary">
+                Work With Us
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="projects.html" class="btn btn--secondary">View Our Portfolio</a>
+            </div>
+          </div>
+          <div class="hero__image reveal reveal--delay-2">
+            <div class="hero__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=600&fit=crop" alt="DevLink software development team collaborating">
+            </div>
+            <p class="hero__image-caption">DevLink — Building the Future of Software in Africa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="section" aria-labelledby="story-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Our Story</span>
+          <h2 id="story-title" class="section-title">What is DevLink?</h2>
+        </header>
+        <div class="bio-grid">
+          <div class="bio-content reveal">
+            <p>
+              <strong>DevLink</strong> is a premier software agency headquartered in Sierra Leone, 
+              dedicated to delivering world-class digital solutions for businesses of all sizes. 
+              We specialize in web development, mobile applications, UI/UX design, custom software, 
+              and API integrations that power modern businesses.
+            </p>
+            <p>
+              Founded with a mission to bridge the technology gap in West Africa, DevLink brings 
+              together a talented network of developers, designers, and strategists who are passionate 
+              about building software that makes a real difference. We work closely with startups, 
+              SMEs, and enterprises to turn ideas into scalable, high-quality digital products.
+            </p>
+            <p>
+              Our approach combines <strong>modern development practices</strong> with deep local 
+              market understanding. We don't just write code — we craft experiences that resonate 
+              with users and drive measurable business outcomes. From MVPs to enterprise platforms, 
+              DevLink is the trusted partner for organizations across Sierra Leone and beyond.
+            </p>
+            <p>
+              As a developer-focused agency, we are also committed to growing the tech ecosystem 
+              in Africa. We mentor emerging developers, contribute to open-source projects, and 
+              actively foster a community where talent can thrive and innovate.
+            </p>
+          </div>
+          <aside class="bio-sidebar reveal reveal--delay-1">
+            <h3 class="bio-sidebar__title">Quick Facts</h3>
+            <ul class="bio-sidebar__list">
+              <li class="bio-sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                Software Agency
+              </li>
+              <li class="bio-sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Freetown, Sierra Leone
+              </li>
+              <li class="bio-sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                Web, Mobile & Custom Software
+              </li>
+              <li class="bio-sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                Developer-Focused Network
+              </li>
+              <li class="bio-sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                Serving Clients Across Africa
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section section--alt" aria-labelledby="stats-title">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="section-label">Impact</span>
+          <h2 id="stats-title" class="section-title">DevLink by the Numbers</h2>
+        </header>
+        <div class="stats-grid reveal">
+          <article class="stat-card">
+            <div class="stat-card__number" data-count="50">0+</div>
+            <p class="stat-card__label">Projects Delivered</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__number" data-count="30">0+</div>
+            <p class="stat-card__label">Happy Clients</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__number" data-count="6">0+</div>
+            <p class="stat-card__label">Cities Covered</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__number" data-count="15">0+</div>
+            <p class="stat-card__label">Team Members</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section" aria-labelledby="journey-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Our Journey</span>
+          <h2 id="journey-title" class="section-title">The DevLink Timeline</h2>
+          <p class="section-description">
+            Key milestones in DevLink's journey from a bold idea to Sierra Leone's trusted software agency.
+          </p>
+        </header>
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <span class="timeline__year">2025 - Present</span>
+            <h3 class="timeline__title">Scaling Across West Africa</h3>
+            <p class="timeline__description">
+              Expanding service coverage to 6 major cities across Sierra Leone. Growing 
+              the team to 15+ members and taking on enterprise-level projects for 
+              organizations across the region.
+            </p>
+          </article>
+          <article class="timeline__item reveal reveal--delay-1">
+            <div class="timeline__marker"></div>
+            <span class="timeline__year">2024</span>
+            <h3 class="timeline__title">Launching Mobile & MVP Services</h3>
+            <p class="timeline__description">
+              Introduced mobile application development and rapid MVP building services. 
+              Delivered 20+ projects and established partnerships with startups and 
+              SMEs across Freetown and beyond.
+            </p>
+          </article>
+          <article class="timeline__item reveal reveal--delay-2">
+            <div class="timeline__marker"></div>
+            <span class="timeline__year">2023</span>
+            <h3 class="timeline__title">First Major Client Projects</h3>
+            <p class="timeline__description">
+              Completed our first wave of commercial projects — including e-commerce 
+              platforms, business websites, and API integrations. Built a reputation 
+              for quality and reliability.
+            </p>
+          </article>
+          <article class="timeline__item reveal reveal--delay-3">
+            <div class="timeline__marker"></div>
+            <span class="timeline__year">2022</span>
+            <h3 class="timeline__title">Building the Team</h3>
+            <p class="timeline__description">
+              Assembled a core team of developers, designers, and project managers. 
+              Established our development workflow, quality standards, and client 
+              onboarding process.
+            </p>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <span class="timeline__year">2021</span>
+            <h3 class="timeline__title">DevLink Founded</h3>
+            <p class="timeline__description">
+              DevLink was born from a vision to deliver world-class software solutions 
+              from Sierra Leone. Started with freelance web development projects and 
+              a commitment to excellence.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="section section--alt" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="section-label">Leadership</span>
+          <h2 id="team-title" class="section-title">DevLink Leadership Team</h2>
+          <p class="section-description">
+            Meet the people driving DevLink's mission to deliver world-class software from Sierra Leone.
+          </p>
+        </header>
+        <div class="team-grid" style="max-width: 800px; margin: 0 auto;">
+          <article class="team-card reveal">
+            <div class="team-card__image">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="DevLink Founder & Lead Developer">
+            </div>
+            <div class="team-card__content">
+              <h3 class="team-card__name">Lead Developer</h3>
+              <span class="team-card__role">Founder & CTO</span>
+              <p class="team-card__bio">
+                Full-stack developer and technical visionary leading DevLink's engineering 
+                team. Passionate about building scalable solutions and mentoring 
+                the next generation of African developers.
+              </p>
+            </div>
+          </article>
+          <article class="team-card reveal reveal--delay-1">
+            <div class="team-card__image">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop" alt="DevLink Creative Director">
+            </div>
+            <div class="team-card__content">
+              <h3 class="team-card__name">Creative Director</h3>
+              <span class="team-card__role">Head of Design</span>
+              <p class="team-card__bio">
+                Leading DevLink's design practice with a focus on user-centered interfaces 
+                and stunning visual experiences. Ensures every product we ship looks 
+                and feels exceptional.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section" aria-labelledby="values-title">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="section-label">Our Values</span>
+          <h2 id="values-title" class="section-title">What Makes DevLink Different</h2>
+          <p class="section-description">
+            The core principles that guide how we build software and serve our clients.
+          </p>
+        </header>
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <div class="value-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Quality First</h3>
+            <p class="value-card__description">
+              Every line of code, every pixel, and every interaction is crafted to the 
+              highest standard. We never cut corners on quality.
+            </p>
+          </article>
+          <article class="value-card reveal reveal--delay-1">
+            <div class="value-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Client Partnership</h3>
+            <p class="value-card__description">
+              We don't just build for clients — we build with them. True collaboration 
+              ensures every solution fits perfectly with business goals.
+            </p>
+          </article>
+          <article class="value-card reveal reveal--delay-2">
+            <div class="value-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="value-card__title">African Impact</h3>
+            <p class="value-card__description">
+              Every project we take on is designed to create real, measurable impact 
+              for businesses and communities across Sierra Leone and Africa.
+            </p>
+          </article>
+          <article class="value-card reveal reveal--delay-3">
+            <div class="value-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Modern Technology</h3>
+            <p class="value-card__description">
+              We use cutting-edge frameworks, tools, and best practices to deliver 
+              fast, secure, and scalable software solutions.
+            </p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Transparency</h3>
+            <p class="value-card__description">
+              Clear communication, honest timelines, and full visibility into our process. 
+              We build trust through openness at every stage.
+            </p>
+          </article>
+          <article class="value-card reveal reveal--delay-1">
+            <div class="value-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Community Growth</h3>
+            <p class="value-card__description">
+              We invest in the local tech ecosystem by mentoring developers, contributing 
+              to open-source, and nurturing talent across Sierra Leone.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section" aria-labelledby="quote-heading">
+      <div class="container">
+        <blockquote class="quote-card reveal">
+          <h2 id="quote-heading" class="sr-only">Personal Philosophy</h2>
+          <p class="quote-card__text">
+            "Great software is not just about code — it's about understanding people, 
+            solving real problems, and building solutions that empower businesses 
+            and communities to reach their full potential."
+          </p>
+          <footer class="quote-card__author">
+            — <strong>The DevLink Team</strong>, Building the Future of Software in Africa
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-card__content">
+            <h2 class="cta-card__title">Ready to Build Something Great?</h2>
+            <p class="cta-card__description">
+              Whether you need a website, mobile app, or custom software solution, 
+              DevLink is ready to bring your vision to life. Let's talk.
+            </p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn--white">
+                Start a Project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="projects.html" class="btn btn--outline-white">View Our Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">DevLink<span>.</span></div>
+          <p class="footer__description">
+            DevLink is a premier software agency based in Sierra Leone, building 
+            stunning websites, mobile apps, and custom software for businesses across Africa.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__nav-title">Navigation</h4>
+          <ul class="footer__nav-list">
+            <li><a href="index.html" class="footer__nav-link">Home</a></li>
+            <li><a href="about.html" class="footer__nav-link">About</a></li>
+            <li><a href="projects.html" class="footer__nav-link">Projects</a></li>
+            <li><a href="market360.html" class="footer__nav-link">Market360</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__nav-title">Resources</h4>
+          <ul class="footer__nav-list">
+            <li><a href="skills.html" class="footer__nav-link">Skills</a></li>
+            <li><a href="writing.html" class="footer__nav-link">Writing</a></li>
+            <li><a href="articles.html" class="footer__nav-link">Articles</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__nav-title">Services</h4>
+          <ul class="footer__nav-list">
+            <li><span class="footer__nav-link">Web Development</span></li>
+            <li><span class="footer__nav-link">Mobile Apps</span></li>
+            <li><span class="footer__nav-link">Custom Software</span></li>
+            <li><span class="footer__nav-link">UI/UX Design</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2025 DevLink SL. All rights reserved. Software Agency, Sierra Leone.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Theme Management with localStorage sync */
+    (function() {
+      const THEME_KEY = 'devlink-theme';
+      function getStoredTheme() { return localStorage.getItem(THEME_KEY); }
+      function setStoredTheme(theme) { localStorage.setItem(THEME_KEY, theme); }
+      function getPreferredTheme() {
+        const stored = getStoredTheme();
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        updateThemeIcon(theme);
+      }
+      function updateThemeIcon(theme) {
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        if (sunIcon && moonIcon) {
+          sunIcon.style.display = theme === 'dark' ? 'none' : 'block';
+          moonIcon.style.display = theme === 'dark' ? 'block' : 'none';
+        }
+      }
+      applyTheme(getPreferredTheme());
+      document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+          themeToggle.addEventListener('click', function() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            applyTheme(newTheme);
+            setStoredTheme(newTheme);
+          });
+        }
+        updateThemeIcon(getPreferredTheme());
+      });
+    })();
+
+    /* Mobile Navigation */
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      if (mobileMenuToggle && mobileNav) {
+        mobileMenuToggle.addEventListener('click', function() {
+          this.classList.toggle('active');
+          mobileNav.classList.toggle('active');
+          document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+      }
+    });
+
+    /* Counter Animation */
+    document.addEventListener('DOMContentLoaded', function() {
+      const counters = document.querySelectorAll('[data-count]');
+      const observerOptions = { threshold: 0.5 };
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = parseInt(counter.getAttribute('data-count'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            const updateCounter = function() {
+              current += step;
+              if (current < target) {
+                counter.textContent = Math.floor(current).toLocaleString() + '+';
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = target.toLocaleString() + '+';
+              }
+            };
+            updateCounter();
+            observer.unobserve(counter);
+          }
+        });
+      }, observerOptions);
+      counters.forEach(function(counter) { observer.observe(counter); });
+    });
+
+    /* Scroll Reveal */
+    document.addEventListener('DOMContentLoaded', function() {
+      const revealElements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      revealElements.forEach(function(el) { observer.observe(el); });
+    });
+  </script>
+</body>
+</html>

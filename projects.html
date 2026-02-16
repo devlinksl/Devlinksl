@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Projects | Momoh Mustapha Sandi - CEO & Software Product Builder</title>
+  <meta name="description" content="Explore projects by Momoh Mustapha Sandi, CEO & Founder of Market360. View software products built for African markets including Market360 digital marketplace.">
+  <meta name="keywords" content="Momoh Mustapha Sandi Projects, Market360, Software Products, African Tech, Portfolio, CEO">
+  <meta name="author" content="Momoh Mustapha Sandi">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Projects | Momoh Mustapha Sandi">
+  <meta property="og:description" content="Software products built by CEO Momoh Mustapha Sandi for African markets.">
+  <meta property="og:type" content="website">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://momohsandi.com/projects.html">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>M</text></svg>">
+
+  <style>
+    /* =====================================================
+       CSS VARIABLES & THEME SYSTEM
+       ===================================================== */
+    :root {
+      --bg-primary: #FAFAFA;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F5F5F7;
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --text-tertiary: #64748B;
+      --border-color: #E5E7EB;
+      --border-light: #F1F5F9;
+      --accent-primary: #2563EB;
+      --accent-hover: #1D4ED8;
+      --accent-light: rgba(37, 99, 235, 0.1);
+      --accent-glow: rgba(37, 99, 235, 0.15);
+      --success: #10B981;
+      --success-light: rgba(16, 185, 129, 0.1);
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08);
+      --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.12);
+      --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.15);
+      --glass-bg: rgba(255, 255, 255, 0.8);
+      --glass-border: rgba(255, 255, 255, 0.5);
+      
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 2rem;
+      --font-size-4xl: 2.5rem;
+      --font-size-5xl: 3.5rem;
+      
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+      --radius-2xl: 1.5rem;
+      --radius-full: 9999px;
+      
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --transition-slow: 400ms ease;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0B0F14;
+      --bg-secondary: #111827;
+      --bg-tertiary: #1F2937;
+      --text-primary: #F9FAFB;
+      --text-secondary: #D1D5DB;
+      --text-tertiary: #9CA3AF;
+      --border-color: #374151;
+      --border-light: #1F2937;
+      --accent-light: rgba(59, 130, 246, 0.15);
+      --accent-glow: rgba(59, 130, 246, 0.2);
+      --accent-primary: #3B82F6;
+      --accent-hover: #60A5FA;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.4);
+      --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 60px rgba(59, 130, 246, 0.2);
+      --glass-bg: rgba(17, 24, 39, 0.8);
+      --glass-border: rgba(55, 65, 81, 0.5);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-size: var(--font-size-base);
+      line-height: 1.6;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
+      overflow-x: hidden;
+      transition: background-color var(--transition-slow), color var(--transition-slow);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    .container {
+      width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6);
+    }
+
+    /* Header */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: var(--glass-bg); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-light);
+      transition: all var(--transition-base);
+    }
+
+    .header__inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6);
+    }
+
+    .header__logo {
+      font-size: var(--font-size-xl); font-weight: 700;
+      color: var(--text-primary); letter-spacing: -0.02em;
+    }
+
+    .header__logo span { color: var(--accent-primary); }
+
+    .nav__list {
+      display: none; list-style: none; gap: var(--space-1);
+    }
+
+    .nav__link {
+      display: block; padding: var(--space-2) var(--space-4);
+      font-size: var(--font-size-sm); font-weight: 500;
+      color: var(--text-secondary); border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
+    }
+
+    .nav__link:hover { color: var(--text-primary); background: var(--accent-light); }
+    .nav__link--active { color: var(--accent-primary); background: var(--accent-light); }
+
+    .header__actions { display: flex; align-items: center; gap: var(--space-3); }
+
+    .theme-toggle {
+      display: flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: var(--radius-full);
+      color: var(--text-secondary); background: var(--bg-tertiary);
+      border: 1px solid var(--border-color); transition: all var(--transition-fast);
+    }
+
+    .theme-toggle:hover {
+      color: var(--text-primary); background: var(--accent-light);
+      border-color: var(--accent-primary); transform: scale(1.05);
+    }
+
+    .theme-toggle svg { width: 20px; height: 20px; }
+
+    .mobile-menu-toggle {
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      width: 40px; height: 40px; border-radius: var(--radius-lg);
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+    }
+
+    .mobile-menu-toggle__line {
+      display: block; width: 18px; height: 2px;
+      background: var(--text-primary); border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
+    }
+
+    .mobile-menu-toggle__line + .mobile-menu-toggle__line { margin-top: 4px; }
+
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(2) { opacity: 0; }
+    .mobile-menu-toggle.active .mobile-menu-toggle__line:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -4px);
+    }
+
+    .mobile-nav {
+      position: fixed; top: 72px; left: 0; right: 0; bottom: 0; z-index: 999;
+      background: var(--bg-primary); padding: var(--space-8) var(--space-6);
+      opacity: 0; visibility: hidden; transform: translateY(-10px);
+      transition: all var(--transition-base);
+    }
+
+    .mobile-nav.active { opacity: 1; visibility: visible; transform: translateY(0); }
+
+    .mobile-nav__list { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+
+    .mobile-nav__link {
+      display: block; padding: var(--space-4) var(--space-5);
+      font-size: var(--font-size-lg); font-weight: 500;
+      color: var(--text-secondary); border-radius: var(--radius-xl);
+      transition: all var(--transition-fast);
+    }
+
+    .mobile-nav__link:hover, .mobile-nav__link--active {
+      color: var(--accent-primary); background: var(--accent-light);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative; min-height: 50vh; display: flex; align-items: center;
+      padding: calc(72px + var(--space-16)) 0 var(--space-16); overflow: hidden;
+    }
+
+    .hero__bg { position: absolute; inset: 0; overflow: hidden; z-index: -1; }
+
+    .hero__gradient {
+      position: absolute; width: 600px; height: 600px; border-radius: 50%;
+      filter: blur(120px); opacity: 0.4; animation: float 20s ease-in-out infinite;
+    }
+
+    .hero__gradient--1 { top: -200px; left: -100px; background: var(--accent-primary); }
+    .hero__gradient--2 { bottom: -200px; right: -100px; background: var(--accent-hover); animation-delay: -10s; }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, -30px) scale(1.1); }
+    }
+
+    .hero__content { position: relative; z-index: 1; max-width: 700px; }
+
+    .hero__label {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm);
+      font-weight: 600; color: var(--accent-primary); background: var(--accent-light);
+      border-radius: var(--radius-full); margin-bottom: var(--space-6);
+    }
+
+    .hero__label svg { width: 16px; height: 16px; }
+
+    .hero__title {
+      font-size: clamp(var(--font-size-3xl), 6vw, var(--font-size-5xl));
+      font-weight: 800; line-height: 1.1; letter-spacing: -0.03em;
+      color: var(--text-primary); margin-bottom: var(--space-6);
+    }
+
+    .hero__title span {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+
+    .hero__description {
+      font-size: var(--font-size-lg); line-height: 1.7;
+      color: var(--text-secondary); max-width: 560px;
+    }
+
+    /* Sections */
+    .section { padding: var(--space-20) 0; }
+    .section--alt { background: var(--bg-tertiary); }
+
+    .section-header { margin-bottom: var(--space-12); }
+    .section-header--center { text-align: center; }
+
+    .section-label {
+      display: inline-block; font-size: var(--font-size-sm); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--accent-primary); margin-bottom: var(--space-3);
+    }
+
+    .section-title {
+      font-size: var(--font-size-3xl); font-weight: 800;
+      color: var(--text-primary); letter-spacing: -0.02em; margin-bottom: var(--space-4);
+    }
+
+    .section-description {
+      font-size: var(--font-size-lg); color: var(--text-secondary); max-width: 600px;
+    }
+
+    .section-header--center .section-description { margin: 0 auto; }
+
+    /* Featured Project */
+    .featured-project {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      border-radius: var(--radius-2xl); overflow: hidden;
+      box-shadow: var(--shadow-xl), var(--shadow-glow);
+    }
+
+    .featured-project__inner {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-8);
+    }
+
+    .featured-project__content { padding: var(--space-8); }
+
+    .featured-project__badge {
+      display: inline-block; padding: var(--space-2) var(--space-4);
+      font-size: var(--font-size-sm); font-weight: 600;
+      background: rgba(255, 255, 255, 0.2); color: #FFFFFF;
+      border-radius: var(--radius-full); margin-bottom: var(--space-4);
+    }
+
+    .featured-project__title {
+      font-size: var(--font-size-3xl); font-weight: 800;
+      color: #FFFFFF; margin-bottom: var(--space-4);
+    }
+
+    .featured-project__description {
+      font-size: var(--font-size-lg); color: rgba(255, 255, 255, 0.9);
+      line-height: 1.7; margin-bottom: var(--space-6);
+    }
+
+    .featured-project__meta { margin-bottom: var(--space-6); }
+
+    .featured-project__meta-item {
+      display: flex; align-items: flex-start; gap: var(--space-3);
+      margin-bottom: var(--space-3); color: rgba(255, 255, 255, 0.9);
+    }
+
+    .featured-project__meta-item strong { color: #FFFFFF; }
+
+    .featured-project__tech {
+      display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-6);
+    }
+
+    .tech-tag {
+      display: inline-block; padding: var(--space-1) var(--space-3);
+      font-size: var(--font-size-sm); font-weight: 500;
+      background: rgba(255, 255, 255, 0.2); color: #FFFFFF;
+      border-radius: var(--radius-full);
+    }
+
+    .featured-project__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+
+    .featured-project__image {
+      position: relative; background: rgba(0, 0, 0, 0.1);
+      display: flex; align-items: center; justify-content: center; min-height: 300px;
+    }
+
+    .featured-project__image img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+
+    /* Project Cards */
+    .projects-grid {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-8);
+    }
+
+    .project-card {
+      background: var(--bg-secondary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl); overflow: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .project-card:hover {
+      border-color: var(--accent-primary); box-shadow: var(--shadow-lg);
+      transform: translateY(-6px);
+    }
+
+    .project-card__image {
+      position: relative; aspect-ratio: 16/10; overflow: hidden;
+      background: var(--bg-tertiary);
+    }
+
+    .project-card__image img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    .project-card:hover .project-card__image img { transform: scale(1.05); }
+
+    .project-card__content { padding: var(--space-6); }
+
+    .project-card__badge {
+      display: inline-block; padding: var(--space-1) var(--space-3);
+      font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--accent-primary); background: var(--accent-light);
+      border-radius: var(--radius-full); margin-bottom: var(--space-3);
+    }
+
+    .project-card__title {
+      font-size: var(--font-size-xl); font-weight: 700;
+      color: var(--text-primary); margin-bottom: var(--space-3);
+    }
+
+    .project-card__description {
+      font-size: var(--font-size-base); color: var(--text-secondary);
+      line-height: 1.6; margin-bottom: var(--space-4);
+    }
+
+    .project-card__tech {
+      display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4);
+    }
+
+    .project-card__tech-tag {
+      display: inline-block; padding: var(--space-1) var(--space-2);
+      font-size: var(--font-size-xs); font-weight: 500;
+      background: var(--bg-tertiary); color: var(--text-secondary);
+      border-radius: var(--radius-sm);
+    }
+
+    .project-card__actions { display: flex; gap: var(--space-3); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-3) var(--space-5);
+      font-size: var(--font-size-sm); font-weight: 600;
+      border-radius: var(--radius-full); transition: all var(--transition-base);
+    }
+
+    .btn--primary {
+      background: var(--accent-primary); color: #FFFFFF;
+      box-shadow: var(--shadow-md), 0 0 20px rgba(37, 99, 235, 0.3);
+    }
+
+    .btn--primary:hover {
+      background: var(--accent-hover); transform: translateY(-2px);
+    }
+
+    .btn--secondary {
+      background: var(--bg-secondary); color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn--secondary:hover {
+      background: var(--bg-tertiary); border-color: var(--accent-primary);
+    }
+
+    .btn--white { background: #FFFFFF; color: var(--accent-primary); }
+    .btn--white:hover { background: rgba(255, 255, 255, 0.9); transform: translateY(-2px); }
+
+    .btn--outline-white {
+      background: transparent; color: #FFFFFF;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn--outline-white:hover {
+      background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .btn--sm { padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); }
+
+    .btn svg { width: 16px; height: 16px; }
+
+    /* Screenshot Modal */
+    .modal-overlay {
+      position: fixed; inset: 0; z-index: 2000;
+      background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: center;
+      padding: var(--space-6); opacity: 0; visibility: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .modal-overlay.active { opacity: 1; visibility: visible; }
+
+    .modal {
+      background: var(--bg-secondary); border-radius: var(--radius-2xl);
+      width: 100%; max-width: 600px; max-height: 90vh; overflow: auto;
+      transform: scale(0.9); transition: transform var(--transition-base);
+    }
+
+    .modal-overlay.active .modal { transform: scale(1); }
+
+    .modal__header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: var(--space-6); border-bottom: 1px solid var(--border-color);
+    }
+
+    .modal__title {
+      font-size: var(--font-size-xl); font-weight: 700; color: var(--text-primary);
+    }
+
+    .modal__close {
+      display: flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: var(--radius-full);
+      color: var(--text-secondary); background: var(--bg-tertiary);
+      transition: all var(--transition-fast);
+    }
+
+    .modal__close:hover { color: var(--text-primary); background: var(--accent-light); }
+    .modal__close svg { width: 20px; height: 20px; }
+
+    .modal__body { padding: var(--space-6); }
+
+    .modal__description {
+      font-size: var(--font-size-base); color: var(--text-secondary);
+      margin-bottom: var(--space-6); line-height: 1.6;
+    }
+
+    .modal__form { display: flex; flex-direction: column; gap: var(--space-4); }
+
+    .form-group { display: flex; flex-direction: column; gap: var(--space-2); }
+
+    .form-label {
+      font-size: var(--font-size-sm); font-weight: 600; color: var(--text-primary);
+    }
+
+    .form-input {
+      padding: var(--space-4); font-size: var(--font-size-base);
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg); color: var(--text-primary);
+      transition: all var(--transition-fast);
+    }
+
+    .form-input:focus {
+      outline: none; border-color: var(--accent-primary);
+      box-shadow: 0 0 0 3px var(--accent-light);
+    }
+
+    .form-input::placeholder { color: var(--text-tertiary); }
+
+    .screenshot-result {
+      margin-top: var(--space-6); padding: var(--space-4);
+      background: var(--bg-tertiary); border-radius: var(--radius-lg);
+      display: none;
+    }
+
+    .screenshot-result.active { display: block; }
+
+    .screenshot-result__image {
+      width: 100%; border-radius: var(--radius-md); margin-bottom: var(--space-4);
+      border: 1px solid var(--border-color);
+    }
+
+    .screenshot-result__loading {
+      display: flex; align-items: center; justify-content: center;
+      padding: var(--space-8); color: var(--text-secondary);
+    }
+
+    .spinner {
+      width: 24px; height: 24px; border: 2px solid var(--border-color);
+      border-top-color: var(--accent-primary); border-radius: 50%;
+      animation: spin 1s linear infinite; margin-right: var(--space-3);
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* CTA */
+    .cta-section { padding: var(--space-20) 0; }
+
+    .cta-card {
+      position: relative;
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+      border-radius: var(--radius-2xl); padding: var(--space-12) var(--space-8);
+      text-align: center; overflow: hidden;
+    }
+
+    .cta-card::before {
+      content: ''; position: absolute; top: -50%; right: -20%;
+      width: 400px; height: 400px; background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+
+    .cta-card__content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+
+    .cta-card__title {
+      font-size: var(--font-size-3xl); font-weight: 700;
+      color: #FFFFFF; margin-bottom: var(--space-4);
+    }
+
+    .cta-card__description {
+      font-size: var(--font-size-lg); color: rgba(255, 255, 255, 0.9);
+      margin-bottom: var(--space-8);
+    }
+
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; }
+
+    /* Footer */
+    .footer {
+      background: var(--bg-secondary); border-top: 1px solid var(--border-color);
+      padding: var(--space-16) 0 var(--space-8);
+    }
+
+    .footer__grid {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-10);
+      margin-bottom: var(--space-12);
+    }
+
+    .footer__brand { max-width: 320px; }
+
+    .footer__logo {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--text-primary); margin-bottom: var(--space-4);
+    }
+
+    .footer__logo span { color: var(--accent-primary); }
+
+    .footer__description {
+      font-size: var(--font-size-base); color: var(--text-secondary);
+      line-height: 1.7; margin-bottom: var(--space-6);
+    }
+
+    .footer__social { display: flex; gap: var(--space-3); }
+
+    .footer__social-link {
+      display: flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; background: var(--bg-tertiary);
+      border: 1px solid var(--border-color); border-radius: var(--radius-lg);
+      color: var(--text-secondary); transition: all var(--transition-fast);
+    }
+
+    .footer__social-link:hover {
+      background: var(--accent-light); border-color: var(--accent-primary);
+      color: var(--accent-primary); transform: translateY(-2px);
+    }
+
+    .footer__social-link svg { width: 18px; height: 18px; }
+
+    .footer__nav-title {
+      font-size: var(--font-size-sm); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--text-primary); margin-bottom: var(--space-4);
+    }
+
+    .footer__nav-list { list-style: none; display: flex; flex-direction: column; gap: var(--space-3); }
+
+    .footer__nav-link {
+      font-size: var(--font-size-base); color: var(--text-secondary);
+      transition: color var(--transition-fast);
+    }
+
+    .footer__nav-link:hover { color: var(--accent-primary); }
+
+    .footer__bottom {
+      display: flex; flex-direction: column; gap: var(--space-4);
+      padding-top: var(--space-8); border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .footer__copyright { font-size: var(--font-size-sm); color: var(--text-tertiary); }
+
+    /* Animations */
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.revealed { opacity: 1; transform: translateY(0); }
+
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .nav__list { display: flex; }
+      .mobile-menu-toggle { display: none; }
+      .projects-grid { grid-template-columns: repeat(2, 1fr); }
+      .featured-project__inner { grid-template-columns: 1fr 1fr; }
+      .footer__grid { grid-template-columns: 2fr 1fr 1fr; }
+      .footer__bottom { flex-direction: row; justify-content: space-between; text-align: left; }
+    }
+
+    @media (min-width: 1024px) {
+      .projects-grid { grid-template-columns: repeat(3, 1fr); }
+      .footer__grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Dev-Link<span>.</span></a>
+      
+      <nav class="nav" role="navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="projects.html" class="nav__link nav__link--active">Projects</a></li>
+          <li><a href="market360.html" class="nav__link">Market360</a></li>
+          <li><a href="skills.html" class="nav__link">Skills</a></li>
+          <li><a href="writing.html" class="nav__link">Writing</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span class="mobile-menu-toggle__line"></span>
+          <span class="mobile-menu-toggle__line"></span>
+          <span class="mobile-menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="skills.html" class="mobile-nav__link">Expertise</a></li>
+      <li><a href="projects.html" class="mobile-nav__link mobile-nav__link--active">Projects</a></li>
+      <li><a href="writing.html" class="mobile-nav__link">Writing</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Screenshot Modal -->
+  <div class="modal-overlay" id="screenshotModal">
+    <div class="modal">
+      <div class="modal__header">
+        <h3 class="modal__title">Generate Website Screenshot</h3>
+        <button class="modal__close" id="closeModal" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__body">
+        <p class="modal__description">
+          Enter a domain URL to generate a preview screenshot. This tool captures the visual 
+          appearance of any website for portfolio documentation or analysis.
+        </p>
+        <form class="modal__form" id="screenshotForm">
+          <div class="form-group">
+            <label class="form-label" for="domainInput">Website URL</label>
+            <input 
+              type="url" 
+              id="domainInput" 
+              class="form-input" 
+              placeholder="https://example.com"
+              required
+            >
+          </div>
+          <button type="submit" class="btn btn--primary" style="width: 100%;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            Generate Screenshot
+          </button>
+        </form>
+        
+        <div class="screenshot-result" id="screenshotResult">
+          <div class="screenshot-result__loading" id="screenshotLoading">
+            <div class="spinner"></div>
+            <span>Generating screenshot...</span>
+          </div>
+          <img class="screenshot-result__image" id="screenshotImage" alt="Website screenshot" style="display: none;">
+          <p id="screenshotUrl" style="font-size: var(--font-size-sm); color: var(--text-tertiary); word-break: break-all;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="projects-title">
+      <div class="hero__bg">
+        <div class="hero__gradient hero__gradient--1"></div>
+        <div class="hero__gradient hero__gradient--2"></div>
+      </div>
+      
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__label reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            Portfolio
+          </span>
+          <h1 id="projects-title" class="hero__title reveal reveal--delay-1">
+            Software <span>Projects</span>
+          </h1>
+          <p class="hero__description reveal reveal--delay-2">
+            A collection of software products and solutions built by 
+            <strong>Dev-Link</strong>, Born in Sierra Leone, built for the world. DevLink is the only agency of its kind in the country — delivering world-class websites..
+          </p>
+          <div class="reveal reveal--delay-3" style="margin-top: var(--space-6);">
+            <button class="btn btn--primary" id="openScreenshotModal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              Generate Screenshot
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project: Market360 -->
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Featured Project</span>
+          <h2 id="featured-title" class="section-title">Market360</h2>
+        </header>
+        
+        <article class="featured-project reveal reveal--delay-1">
+          <div class="featured-project__inner">
+            <div class="featured-project__content">
+              <span class="featured-project__badge">CEO & Founder</span>
+              <h3 class="featured-project__title">Digital Marketplace for Sierra Leone</h3>
+              <p class="featured-project__description">
+                Market360 is Sierra Leone's leading digital marketplace, connecting local 
+                businesses with customers across the nation. Built from the ground up to 
+                address the unique challenges of African e-commerce.
+              </p>
+              
+              <div class="featured-project__meta">
+                <div class="featured-project__meta-item">
+                  <strong>Problem:</strong> Sierra Leone lacked a trusted, centralized digital 
+                  marketplace connecting local businesses with customers.
+                </div>
+                <div class="featured-project__meta-item">
+                  <strong>Solution:</strong> A comprehensive e-commerce platform enabling 
+                  merchants to list products and customers to shop locally with ease.
+                </div>
+                <div class="featured-project__meta-item">
+                  <strong>Leadership:</strong> CEO Momoh Mustapha Sandi & Vice CEO Eazikel Sesay
+                </div>
+              </div>
+              
+              <div class="featured-project__tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Mobile Money</span>
+              </div>
+              
+              <div class="featured-project__actions">
+                <a href="market360.html" class="btn btn--white">
+                  Read Case Study
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <button class="btn btn--outline-white screenshot-btn" data-url="https://market360.sl">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  Screenshot
+                </button>
+              </div>
+            </div>
+            
+            <div class="featured-project__image">
+              <img 
+                src="public/screenshots/phone-pic.jpg" 
+                alt="Market360 platform interface showing product listings and dashboard"
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Other Projects -->
+    <section class="section section--alt" aria-labelledby="other-projects-title">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="section-label">Portfolio</span>
+          <h2 id="other-projects-title" class="section-title">Other Projects</h2>
+          <p class="section-description">
+            Additional software products and solutions developed by Dev-Link SL.
+          </p>
+        </header>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal reveal--delay-1">
+            <div class="project-card__image">
+              <img 
+                src="/public/g-work.jpg" 
+                alt="InventoryPro dashboard interface"
+              >
+            </div>
+            <div class="project-card__content">
+              <span class="project-card__badge">Dev-Link</span>
+              <h3 class="project-card__title">G-Work sl</h3>
+              <p class="project-card__description">
+                <strong>Problem:</strong>Jobs are scattered on WhatsApp, Facebook, radio, word-of-mouth.
+                <br><strong>Solution:</strong> Built a simple, Job finder system.
+              </p>
+              <div class="project-card__tech">
+                <span class="project-card__tech-tag">Vue.js</span>
+                <span class="project-card__tech-tag">Firebase</span>
+                <span class="project-card__tech-tag">PWA</span>
+              </div>
+              <div class="project-card__actions">
+                <button class="btn btn--sm btn--secondary screenshot-btn" data-url="https://inventorypro.example.com">
+                  Screenshot
+                </button>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 2 -->
+          <article class="project-card reveal reveal--delay-2">
+            <div class="project-card__image">
+              <img 
+                src="/public/Sangpt.gif" 
+                alt="PayLink payment interface"
+              >
+            </div>
+            <div class="project-card__content">
+              <span class="project-card__badge">Dev-Link</span>
+              <h3 class="project-card__title">Sangpt</h3>
+              <p class="project-card__description">
+                <strong>Problem:</strong> Local payment processing was complex and unreliable.
+                <br><strong>Solution:</strong> Created a streamlined payment gateway for local merchants.
+              </p>
+              <div class="project-card__tech">
+                <span class="project-card__tech-tag">React Native</span>
+                <span class="project-card__tech-tag">Node.js</span>
+                <span class="project-card__tech-tag">Stripe</span>
+              </div>
+              <div class="project-card__actions">
+                <button class="btn btn--sm btn--secondary screenshot-btn" data-url="https://paylink.example.com">
+                  Screenshot
+                </button>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-card__content">
+            <h2 class="cta-card__title">Interested in Collaborating?</h2>
+            <p class="cta-card__description">
+              Whether you need a technical co-founder, developer, or consultant — 
+              let's discuss how we can work together on your next project.
+            </p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn--white">
+                Start a Conversation
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="about.html" class="btn btn--outline-white">Learn About US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Dev-Link<span>.</span></div>
+          <p class="footer__description">
+            Born in Sierra Leone, built for the world. DevLink is the only agency of its kind in the country — delivering world-class websites, apps, and software to businesses that dare to grow.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__nav-title">Navigation</h4>
+          <ul class="footer__nav-list">
+            <li><a href="index.html" class="footer__nav-link">Home</a></li>
+            <li><a href="about.html" class="footer__nav-link">About</a></li>
+            <li><a href="projects.html" class="footer__nav-link">Projects</a></li>
+            <li><a href="market360.html" class="footer__nav-link">Market360</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer__nav-title">Resources</h4>
+          <ul class="footer__nav-list">
+            <li><a href="skills.html" class="footer__nav-link">Skills</a></li>
+            <li><a href="writing.html" class="footer__nav-link">Writing</a></li>
+            <li><a href="articles.html" class="footer__nav-link">Articles</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Contact</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2025 Dev-Link. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Theme Management */
+    (function() {
+      const THEME_KEY = 'momoh-portfolio-theme';
+      
+      function getStoredTheme() { return localStorage.getItem(THEME_KEY); }
+      function setStoredTheme(theme) { localStorage.setItem(THEME_KEY, theme); }
+      
+      function getPreferredTheme() {
+        const stored = getStoredTheme();
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        updateThemeIcon(theme);
+      }
+      
+      function updateThemeIcon(theme) {
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        if (sunIcon && moonIcon) {
+          sunIcon.style.display = theme === 'dark' ? 'none' : 'block';
+          moonIcon.style.display = theme === 'dark' ? 'block' : 'none';
+        }
+      }
+      
+      applyTheme(getPreferredTheme());
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+          themeToggle.addEventListener('click', function() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            applyTheme(newTheme);
+            setStoredTheme(newTheme);
+          });
+        }
+        updateThemeIcon(getPreferredTheme());
+      });
+    })();
+
+    /* Mobile Navigation */
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      
+      if (mobileMenuToggle && mobileNav) {
+        mobileMenuToggle.addEventListener('click', function() {
+          this.classList.toggle('active');
+          mobileNav.classList.toggle('active');
+          document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+      }
+    });
+
+    /* Screenshot Modal */
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('screenshotModal');
+      const openBtn = document.getElementById('openScreenshotModal');
+      const closeBtn = document.getElementById('closeModal');
+      const form = document.getElementById('screenshotForm');
+      const domainInput = document.getElementById('domainInput');
+      const result = document.getElementById('screenshotResult');
+      const loading = document.getElementById('screenshotLoading');
+      const image = document.getElementById('screenshotImage');
+      const urlText = document.getElementById('screenshotUrl');
+      
+      // Open modal from main button
+      if (openBtn) {
+        openBtn.addEventListener('click', function() {
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+      
+      // Open modal from screenshot buttons on project cards
+      document.querySelectorAll('.screenshot-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const url = this.getAttribute('data-url');
+          if (domainInput && url) {
+            domainInput.value = url;
+          }
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+      
+      // Close modal
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+      
+      // Close on overlay click
+      if (modal) {
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+      
+      // Form submission
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const url = domainInput.value.trim();
+          if (!url) return;
+          
+          // Show result area with loading
+          result.classList.add('active');
+          loading.style.display = 'flex';
+          image.style.display = 'none';
+          urlText.textContent = '';
+          
+          // Simulate screenshot generation (in a real app, this would call an API)
+          setTimeout(function() {
+            loading.style.display = 'none';
+            
+            // Generate placeholder screenshot URL based on domain
+            const screenshotUrl = '/placeholder.svg?height=400&width=600' + encodeURIComponent(url);
+            
+            image.src = screenshotUrl;
+            image.style.display = 'block';
+            urlText.textContent = 'Screenshot of: ' + url;
+          }, 2000);
+        });
+      }
+    });
+
+    /* Scroll Reveal */
+    document.addEventListener('DOMContentLoaded', function() {
+      const revealElements = document.querySelectorAll('.reveal');
+      
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      revealElements.forEach(function(el) { observer.observe(el); });
+    });
+  </script>
+</body>
+</html>
